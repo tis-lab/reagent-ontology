@@ -1,0 +1,829 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/mod_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/mod_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mod_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00006">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-glycosylated residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00693"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a residue hydrogen atom on a nitrogen with a carbohydrate-like group through a glycosidic bond.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NGlycoRes</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00030">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-formyl-L-methionine residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-formylamino-4-(methylsulfanyl)butanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-formamido-4-(methylsulfanyl)butanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-formylamino-4-(methylthio)butanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-formylazanyl-4-(methylsulfanyl)butanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts a source amino acid residue to an N-formyl-L-methionine, a natural pretranslational modification.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES N-formylmethionine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-formyl-L-methionine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-formylated L-methionine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fMet</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nformylmet</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00031">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-selenocysteine residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2R)-2-amino-3-selanylpropanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-azanyl-3-selanylpropanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-selenylalanine</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts a source amino acid residue to an L-selenocysteine, a natural pretranslational modification.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-selenocysteine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NON_STD Selenocysteine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SeCys</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sec</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selenium cysteine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00033">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crosslinked residues</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that crosslinks two or more amino acid residues with covalent bonds.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The covalent bond is formed directly between sidechain atoms. If non-aminoacid atoms are involved in connecting two or more peptide chain residues peptide chain, the connection is classified as a multivalent binding site.</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLNK-Res-Res</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00034">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-cystine (cross-link)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00033"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2R,2&#39;R)-3,3&#39;-disulfane-1,2-diylbis(2-aminopropanoic acid)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3,3&#39;-disulfane-1,2-diylbis(2-azanylpropanoic acid)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3,3&#39;-dithiobis(2-aminopropanoic acid)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3,3&#39;-dithiobisalanine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3,3&#39;-dithiodialanine</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively cross-links two L-cysteine residues to form L-cystine.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-link 2; for formation of a disulfide bond between a peptide cysteine and a free cysteine, see MOD:00765.</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cys2</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cystine ((Cys)2)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DISULFID</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DISULFID Interchain</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-cystine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLNK-SCys-SCys</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta,beta&#39;-diamino-beta,beta&#39;-dicarboxydiethyldisulfide</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta,beta&#39;-dithiodialanine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bis(alpha-aminopropionic acid)-beta-disulfide</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bis(beta-amino-beta-carboxyethyl)disulfide</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dicysteine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00042">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-aspartic 4-phosphoric anhydride</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00696"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-4-oxo-4-(phosphonooxy)butanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-aminobutanedioic 4-phosphoric anhydride</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-azanyl-4-oxo-4-(phosphonooxy)butanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-oxo-O-phosphono-L-homoserine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-phosphoaspartic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-phosphorylated L-aspartatic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-aspartic acid residue to L-aspartic 4-phosphoric anhydride.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACT_SITE 4-aspartylphosphate intermediate</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-aspartic 4-phosphoric anhydride</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES 4-aspartylphosphate</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAsp</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-aspartyl phosphate</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00045">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3&#39;-phospho-L-histidine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00696"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-3-(3-phosphono-3H-imidazol-4-yl)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-azanyl-3-(3-phosphono-3H-imidazol-4-yl)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3&#39;-phospho-L-histidine</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-histidine residue to pros-phospho-L-histidine (N-pi-phospho-L-histidine, 3&#39;-phospho-L-histidine).</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACT_SITE Pros-phosphohistidine intermediate</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES Pros-phosphohistidine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N(pi)-phosphohistidine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N3-phosphonohistidine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ND1-phosphonohistidine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NpPHis</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Npi-phosphorylated L-histidine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">histidine-N(delta)-phosphate</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">histidine-N3&#39;-phosphate</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pros-phosphohistidine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00046">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-phospho-L-serine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00696"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-3-(phosphonooxy)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-amino-3-hydroxypropanoic acid 3-phosphate</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-azanyl-3-(phosphonooxy)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-serine residue to O-phospho-L-serine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACT_SITE Phosphoserine intermediate</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES Phosphoserine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-phospho-L-serine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-phosphonoserine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-phosphorylated L-serine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O3-phosphoserine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPSer</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phospho Seryl</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphorylations</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serine phosphate ester</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00047">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-phospho-L-threonine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00696"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S,3R)-2-amino-3-(phosphonooxy)butanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-amino-3-hydroxybutanoic acid 3-phosphate</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-azanyl-3-(phosphonooxy)butanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-threonine residue to O-phospho-L-threonine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES Phosphothreonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-phospho-L-threonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-phosphorylated L-threonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O3-phosphothreonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPThr</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phospho Threonyl</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphorylationt</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">threonine phosphate ester</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00048">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O4&#39;-phospho-L-tyrosine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00696"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-3-(4-phosphonooxyphenyl)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-amino-3-(4-hydroxyphenyl)propanoic acid 4&#39;-phosphate</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-azanyl-3-(4-phosphonooxyphenyl)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-tyrosine residue to O4&#39;-phospho-L-tyrosine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES Phosphotyrosine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O4&#39;-phospho-L-tyrosine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O4&#39;-phosphorylated L-tyrosine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O4-phosphotyrosine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPTyr</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phospho Tyrosinyl</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphorylationy</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosine phosphate</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00050">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-acetyl-L-alanine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00394"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-(acetamido)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-(acetylamino)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-(acetylazanyl)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-alanine residue to N-acetyl-L-alanine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AcAla</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES N-acetylalanine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-acetyl-L-alanine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-acetylated L-alanine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acetylalanine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00064">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-acetyl-L-lysine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00394"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-6-acetamido-2-aminohexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6-acetylamino-2-aminohexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6-acetylazanyl-2-aminohexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-lysine residue to N6-acetyl-L-lysine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES N6-acetyllysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N(zeta)-acetyllysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-acetyl-L-lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-acetylated L-lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6AcLys</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acetylk</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epsilon-acetyllysine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00078">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">omega-N-methyl-L-arginine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00427"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-5-[(imino(methylamino)methyl)amino]pentanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-arginine residue to N(omega)-methyl-L-arginine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES Omega-N-methylarginine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES Omega-N-methylated arginine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NG-methylarginine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NoMeArg</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">omega-N-methyl-L-arginine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">omega-N-methylated L-arginine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00083">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6,N6,N6-trimethyl-L-lysine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00427"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(5S)-5-amino-5-carboxy-N,N,N-trimethylpentan-1-aminium</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-amino-6-(trimethylammonio)hexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-azanyl-5-carboxy-N,N,N-trimethylpentanazanium</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-lysine residue to N6,N6,N6-trimethyl-L-lysine.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DeltaMass calculates the mass difference from protonated lysine rather than neutral lysine</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES N6,N6,N6-trimethyllysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N(zeta)-trimethyllysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-trimethylation (of lysine)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6,N6,N6-trimethyl-L-lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6,N6,N6-trimethylated L-lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6,N6,N6-trimethyllysin-N6-ium</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6,N6,N6-trimethyllysine cation</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6Me3+Lys</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epsilon-trimethyllysine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00087">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-myristoyl-L-lysine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00438"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-6-(tetradecanoylamino)hexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-amino-6-(tetradecanamido)hexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-lysine residue to N6-myristoyl-L-lysine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIPID N6-myristoyl lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N(zeta)-myristoyllysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-(1-oxotetradecyl)-L-lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-(C14:0 aliphatic acyl)lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-myristoyl-L-lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-myristoylated L-lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6MyrLys</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epsilon-myristoyllysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myristoylationk</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00113">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S-geranylgeranyl-L-cysteine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00703"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2R)-2-amino-3-[(2E,6E,10E)-3,7,11,15-tetramethylhexadeca-2,6,10,14-tetraenyl]sulfanylpropanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-amino-3-(3,7,11,15-tetramethyl-2,6,10,14-hexadecatetraenylthio)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-cysteine residue to S-geranylgeranyl-L-cysteine.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DeltaMass calculates the mass with two double bonds rather than four</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIPID S-geranylgeranyl cysteine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S-geranylgeranyl</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S-geranylgeranyl-L-cysteine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGergerCys</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geranylgeranylc</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00127">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-lipoyl-L-lysine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-6-(5-[(3R)-1,2-dithiolan-3-yl]pentanamido)hexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-6-[(5-[(3R)-1,2-dithiolan-3-yl]pentanoyl)amino]hexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S,6&#39;R)-2-amino-6-(6,8-dithiooctanamido)hexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-amino-6-(5-[1,2-dithiolan-3-yl]-1-oxopentyl)aminohexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-lysine residue to N6-lipoyl-L-lysine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES N6-lipoyllysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-Lipoyl- (on Lysine)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-6,8-dithiooctanoyllysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-lipoyl-L-lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-lipoyllysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6LipLys</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipoylk</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00128">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-pyridoxal phosphate-L-lysine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-6-[([3-hydroxy-2-methyl-5-phosphonooxymethylpyridin-4-yl]methylidene)amino]hexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-lysine residue to N6-pyridoxal phosphate-L-lysine.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From DeltaMass: Average Mass: 231</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES N6-(pyridoxal phosphate)lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-pyridoxal phosphate-L-lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6PydoxLys</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyridoxal phosphate (Schiff Base formed to lysine)</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00160">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N4-glycosyl-L-asparagine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00693"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-asparagine residue to an N4-glycosyl-L-asparagine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N4GlycoAsn</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00213 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00213">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chondroitin sulfate D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl-L-serine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00693"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively cross-links an L-serine residue to the polymer chondroitin sulfate by a D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl tetrasaccharide.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chondroitin 4-sulfate (chondroitin sulfate A)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chondroitin 6-sulfate (chondroitin sulfate C)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chondroitin sulfate D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl-L-serine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poly[beta-1,4-D-glucopyranuronosyl-beta-1,3-(2-acetamido-2-deoxy-4-sulfate-D-galactosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine; poly[beta-1,4-D-glucopyranuronosyl-beta-1,3-(2-acetamido-2-deoxy-6-sulfate D-galactosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00215 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00215">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heparan sulfate D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl-L-serine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00693"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively cross-links an L-serine residue to the polymer heparan sulfate by a D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl tetrasaccharide.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heparan sulfate D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl-L-serine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heparin</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heparitin sulfate</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poly[alpha-1,4-(2-sulfate D-glucopyranuronosyl)-beta-1,4-(2-sulfamino-2-deoxy-6-sulfate D-glucosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00222">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2&#39;-alpha-mannosyl-L-tryptophan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00693"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-3-(2-beta-D-mannopyranosyl-1H-indol-3-yl)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2&#39;-mannosyl-L-tryptophan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2&#39;-tryptophan C-mannoside</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-tryptophan residue to 2&#39;-alpha-mannosyl-L-tryptophan.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C2&#39;ManTrp</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARBOHYD C-linked (Man)</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00237">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-beta-methylthioaspartic acid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2R,3Xi)-2-amino-3-methylsulfanylbutanedioic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-(methylthio)-L-aspartic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-carboxy-S-methyl-cysteine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-methylthio-aspartic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3MeSAsp</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-aspartic acid residue to L-beta-methylthioaspartic acid.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES 3-methylthioaspartic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-Methylthio-aspartic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-methylthio-aspartic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bmethylthiold</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methythiold</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00394">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acetylated residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a hydrogen atom with an acetyl group.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AcRes</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acetylation (N terminus, N epsilon of Lysine, O of Serine) (Ac)</obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amino hydrogens are replaced to produce amides; hydroxyl hydrogens are replaced to produce esters; and hydrosulfanyl (thiol) hydrogens are replaced to produce sulfanyl esters (thiol esters). From DeltaMass: Average Mass: 42</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00396">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-glycosylated residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00693"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a residue hydrogen atom on an oxygen with a carbohydrate-like group through a glycosidic bond.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGlycoRes</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00427">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methylated residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a hydrogen atom with a methyl group.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From DeltaMass: Average Mass: 14 Average Mass Change:14 References:Methylation of Asparagine (found in phycobiliproteins) Klotz and Glazer (1987) J. Biol. Chem. 262; 17350-17355</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeRes</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methylation (N terminus, N epsilon of Lysine, O of Serine, Threonine or C terminus, N of Asparagine)</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00438 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00438">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myristoylated residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a hydrogen atom with a myristoyl group.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C14:0 aliphatic acylated residue</obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From DeltaMass: Average Mass: 210</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MyrRes</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myristoylation</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00448 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00448">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-acetylaminoglucosylated residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a hydrogen atom with an N-acetylaminoglucose group through a glycosidic bond.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAcRes</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00693 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00693">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosylated residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a hydrogen atom with an carbohydrate-like group through a glycosidic bond.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlycoRes</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00696 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00696">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphorylated residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a hydrogen atom with a phosphono group (H2PO3 or &#39;phosphate&#39;).</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From DeltaMass: Average Mass: 80.</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhosRes</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phosphorylation (O of Serine, Threonine, Tyrosine and Aspartate, N epsilon of Lysine)</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00703 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00703">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isoprenylated residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a hydrogen atom with a group derived from an isoprene polymer, such as a geranyl (C10), farnesyl (C15) or geranylgeranyl (C20) group.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IpRes</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00723 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00723">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-acetylated L-lysine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00394"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-lysine residue to either N2-acetyl-L-lysine, or N6-acetyl-L-lysine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAcLys</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00783 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00783">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dimethylated L-arginine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00427"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces two hydrogen atoms of an L-arginine residue with two methyl groups.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNMe2Arg</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dimethylr</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00806 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00806">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-(N-acetylamino)glucosyl-L-threonine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00448"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S,3R)-2-amino-3-(2-acetamido-2-deoxy-beta-D-glucopyranosyloxy)butanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-threonine residue to O3-(N-acetylaminoglucosyl)-L-threonine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARBOHYD O-linked (GlcNAc)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARBOHYD O-linked (HexNAc)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-(2-acetylamino-2-deoxy-beta-D-glucopyranosyl)-L-threonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-(N-acetylamino)glucosyl-L-threonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-(N-acetylglucosaminyl)-L-threonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-glycosylthreonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-threonyl-beta-N-acetylglucosaminide</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O3-(2-acetamido-2-deoxy-beta-D-glucopyranosyl)-L-threonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O3-(N-acetylglucosaminyl)threonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGlcNAcThr</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00812 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00812">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-fucosyl-L-serine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00693"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-3-(6-deoxy-alpha-D-galactopyranosyloxy)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-serine residue to an O-fucosylserine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARBOHYD O-linked (Fuc)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARBOHYD O-linked (dHex)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-fucosyl-L-serine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-glycosylserine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O3-fucosylserine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OFucSer</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00813 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00813">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-fucosyl-L-threonine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00693"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S,3R)-2-amino-3-(6-deoxy-alpha-D-galactopyranosyloxy)butanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an threonine residue to an O-fucosylthreonine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARBOHYD O-linked (Fuc)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARBOHYD O-linked (dHex)</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-fucosyl-L-threonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-glycosylthreonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O3-fucosylthreonine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OFucThr</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00814 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00814">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-xylosyl-L-serine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00693"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-3-(alpha-D-xylopyranosyloxy)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-serine residue to O3-xylosylserine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-(beta-D-xylopyranosyl)-L-serine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-glycosylserine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-xylosyl-L-serine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O3-xylosylserine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OXylSer</obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One glycosylated serine with weak electron density was modeled as O3-alpha-xylosylserine, while O3-alpha-mannosyl serine and threonine were modeled at ten other positions. The authors do not discuss this exception or provide chemical evidence for it. Since an O3-xylosyl serine modification has not been reported in any other fungal proteins, the modification is probably also an O3-alpha-mannosyl serine, see MOD:00810 [JSG].</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00818 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00818">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosylphosphatidylinositolated residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts a residue to a glycosylphosphatidylinositolethanolamidated.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GPIRes</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_00822 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00822">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S-(L-leucyl)-L-cysteine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00033"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2R)-2-amino-3-([(2S)-2-amino-4-methylpentanoyl]sulfanyl)propanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively crosslinks an L-leucine residue and an L-cysteine residue by a thioester bond to form S-(L-leucyl)-L-cysteine.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CROSSLNK Leucyl cysteine thioester (Cys-Leu)</obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-link 2.</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S-(2-amino-4-methylpentanoyl)cysteine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S-(L-leucyl)-L-cysteine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLNK1LeuSCys</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leucine cysteine thioester</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_01048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_01048">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-pyrrolidone-5-carboxylic acid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts a source amino acid residue to 2-pyrrolidone-5-carboxylic acid.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From DeltaMass: Average Mass: -18 Average Mass Change: -18.01 References:The conversion of glutamic acid to pyroglutamic was reported for the beta-amiloid protein. Miller et al. Arch. Biochem. Biophy. (1993) 301, 41-52.</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PyrGlu</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_01148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_01148">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ubiquitinylated lysine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively crosslinks the N6-amino of a peptidyl lysine with the carboxyl-terminal glycine of a ubiquitin.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_01149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_01149">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sumoylated lysine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively crosslinks the N6-amino of a peptidyl lysine with the carboxyl-terminal glycine of a sumo (Small Ubiquitin-related MOdifier) protein.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_01150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_01150">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neddylated lysine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively crosslinks the N6-amino of a peptidyl lysine with the carboxyl-terminal glycine of a nedd8 protein.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_01187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_01187">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-pyrrolysine residue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000025513"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-6-[(2R,3R)-3-methyl-3,4-dihydro-2H-pyrrol-2-ylcarbonyl]aminohexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-azanyl-6-[(2R,3R)-3-methyl-3,4-dihydro-2H-pyrrol-2-ylcarbonyl]azanylhexanoic acid</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that inserts or replaces a residue with an L-pyrrolysine residue, a natural pretranslational modification.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-pyrrolysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-(4-methyl-1,2-didehydropyrrolidine-5-carboxyl)-L-lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-(4-methyl-delta-1-pyrroline-5-carboxyl)-L-lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N6-([(2R,3R)-3-methyl-3,4-dihydro-2H-pyrrol-2-yl]carbonyl)-L-lysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NON_STD Pyrrolysine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyl</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monomethylamine methyltransferase cofactor lysine adduct</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_01240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_01240">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ubiquitination signature tetrapeptidyl lysine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00033"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that crosslinks the N6-amino of a peptidyl lysine with the carboxyl of leucyl-arginyl-glycyl-glycine, the C-terminal tetrapeptide of ubiquitin.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/mod.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000025513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000025513"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+
+<!--
+
+Notice: All the OBO ontologies have changed the term URI format from http://purl.org/obo/owl/ontology#ontology_nnnnnnn to http://purl.obolibrary.org/obo/ontology_nnnnnnn. Please make sure your input files are updated.
+
+The following terms do not have any related axioms in the source ontology:
+
+http://purl.obolibrary.org/obo/PR_000025513
+-->

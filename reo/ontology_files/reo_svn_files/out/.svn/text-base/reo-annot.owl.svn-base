@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="htt://purl.obolibrary.org/obo/reo-annot.owl#"
+     xml:base="htt://purl.obolibrary.org/obo/reo-annot.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="htt://purl.obolibrary.org/obo/reo-annot.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/REO_0000208"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/REO_0000513"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000174">
+        <obo:REO_0000208>Here &#39;stain&#39; and &#39;dye&#39; labels are considered interchangable alternative labels.  But when/if they are distinguished, &#39;stain&#39; refers more often to a molecular entity used to detect surface/near surface phenomenon, while &#39;dye&#39; refers to a moelcular entity that penetrates the surface. The degree of penetration is variable. (source = http://answers.yahoo.com/question/index?qid=20081201104514AAEebUz)</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000171">
+        <obo:REO_0000208>Molecular label role has four asserted subclasses, distinguished along two axes : (a) the nature of their association with a molecular target (covalent vs. non-covalent), and (b) their ability to emit or produce some detectable signal : 
+
+1. &#39;molecular reporter role&#39;, inhereing in a &#39;molecular reporter&#39; that  emits some detectable signal and is incorporated covalently into a probe or analyte.  Examples include a radioactive P33 atom incorporated into an aligonucleotide probe, a fluorochrome covalently linked to an antibody probe, a GFP tag linked to a recombinant protein, a radioactive S35 atom incorporated into methionine residues of a protein
+
+2. a &#39;molecular probe role&#39;, inhereing in a &#39;molecular probe&#39; that non-covalently binds a molecular target and links an analyte with a reporter).  Examples include an oligonucleotide probe used to target its complementary sequence in a FISH assay, and antibody used to target a specific protein in a immunhohistochemical assay.
+
+3. A &#39;stain role&#39;, inhereing in a molecular stain or dye, that non-covalently binds to an analyte and emits a detectable colorimetric or fluorescent signal.  Examples include toluidine blue (a blue stain that that targets heparin to detect mast cells in histochemistry), DAPI stain (binds to DNA and fluoresces under UV light), and Ponceau S stain (a red stain which binds generally to protein).
+
+4. a &#39;tracker&#39; role, inhereing in a moleculr tracker that covalently binds to an analyte or probe, and does not emit a detectable signal.  Examples include biotin incorporated into a oligonucleotide probe, or a FLAG epitope tag incorporated into a recombinant protein.</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in">
+        <obo:REO_0000208>Not clear to my why this property is asserted to be functional.  Seems like a given role could inhere in more than one different class of entities, without those classes needing to be equivalent. This assertion of funcitonality also has consequences for how the reasoner treats the &#39;research material&#39; class (see annotation on this class for further explanation here)</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000684">
+        <obo:REO_0000208>As this objective can be realized by either planning processes or material processings (with intent to use output as a specimen), this class is not asserted as a type of material processing objective (is similar to &#39;reagent creation objective in this sense).</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000112">
+        <obo:REO_0000208>Obsoleted &#39;feedback to OBI&#39; annotation:
+ (ReO proposes two changes: First is to remove the necessity that a specimen be intended for use in an investigation, as this is very often not the case.  Furthermore, OBI already uses an evaluant role for entities that are intended subjects of an assay, such that the specimen role as defined in OBI seems redundant.  ReO implements the specimen role such that it is gained upon an agent’s intent to collect it instead of upon it’s collection, and is realized upon its collection and not its input in an investigation.  
+
+Second is to change the label of the ‘specimen creation’ class to ‘specimen collection’, as according to our definition, all specimens are outputs of some collection process.  This second change may not be required, however, if we say that specimens can be derived from other specimens, in which case the derivation process that creates a specimen is not a collection process.
+
+If it is determined that specimens can be created in the absence of some collection process, then we can use the ReO:specimen creation class (defined as has_specified_output some specimen) as an equivalent class to subsume the specimen collection process along with other processes that generate specimens.  This would also mean that we cannot say a specimen role is gained in a collection process.)</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000166">
+        <obo:REO_0000208>OBSOLETED : Decided to abandon this modeling approach, and will now enable inference of researhc amterials primarily by asserting they are output from a material processing technique (as material processing techniques have output only research material)
+
+All material inputs into some investigation, experiment, or technique described in this ontology should be asserted to have some kind of research material role (a reagent role, a specimen role, a scientific instrument or device role, or a research agent role) (unless they hold an axiom that they are the specified output of some technique, which also qualifies them as research material). This is important for the reasoner to classify the planned processes used to generate research materials as &#39;material processing techniques&#39;, which is defined as having output some research material (the fact this is a &#39;technique&#39; necessitates that any material output bears a research material role).  For example, in order for &#39;cell culturing technique&#39; and &#39;molecular labeling technique&#39; to classify as a material procesing technique, I needed to add a &#39;specimen role&#39;  to cell culture and a &#39;research material role&#39; to &#39;labeled material&#39;.  Similarly, in order to get &#39;transfection&#39;  to classify as a material processing technique, I had to specify that the output of a transfection is a &#39;material entity&#39; that has a &#39;research material role&#39;.</obo:REO_0000208>
+        <obo:REO_0000208>This class was created to allow a grouping of all material entities that are intended for use in biomedical research investigations.  This role (or one of its children) should be attached to any material entity class that fits criteria. NO LONGER SO - will instead assert all techniques as techniques, and define techniqe as having output ONLY reserachamterial or ICE about research material.  SO I will not need to add the research material role axiom to all research materials . . .rather, they will be inferred to be such if they are asserted to be output of a technique.  SO NEW CONVENTION SHOULD BE TO, WHENEVER POSSIBLE, CREATE AN AXIOM SAYING THAT A MATERIAL ENTITY IS OUTPUT FROM SOME TECHNIQUE OR IF CANNOT DO SO, SAY IT HAS A RESEARCH MATERIAL ROLE.</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000006">
+        <obo:REO_0000208>RESOLVED FEEDBACK TO CARO ANNOTATION
+
+CARO 
+
+7-6-11: replace with CARO2 definition/class when available.  It remains unclear if this definition will require anatomical entities to be part of some organism, or only that they derive from some organism in some specified way (ie does derives from require only that it was part of an organism, or that it (or some portion of it?) results from the coordinated expression of an organism&#39;s own geneome, or that it can result from the coordinated expression of an organism&#39;s genome or that of any organism that is part of the organism (to account for anatomical structures such as virally-induced tumors) ).  
+
+Definitions of some terms such as &#39;cell in vivo&#39; may have to be modified depending on the outcome of these decisions.)
+
+11-4-11: &#39;material anatomical entity&#39; in CARO will refer to all anatomical entities from organism down to cell (and subcellular structures?).  CARO:gross anatomical part (child of anatomical entity) will encompass anatomical entities BELOW organism to ABOVE cell. This is equivalent to the OBI:anatomical structure class.  A CARO material anatomical entity needs to be part of or located in an organism, (and does not need to derive from the coordinated expression of an organisms genome - such that feces and urine are anatomical entities).  For now, ReO will follow CARO in treating cells and organisms as material anatomical entities - and thus use this imported class.  But for purposes of integration with OBI, may want to use thier approach and import only gross anatomical entity from CARO, and keep organism and cell outside of this branch.</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000001">
+        <obo:REO_0000513>Explanation of Roles Realized Through Three Squential Techniques:
+
+1. A Material Processing Technique (Generation of a Labeled Antibody)
+In a antibody labeling technique, the antibody and fluorochrome play incorporant roles (primary and secondary incorporant roles, respectively), and any coupling or elution buffers used play reagent roles.
+
+2. An Assay (Determining Degree of Labeling)
+In an assay to determine the efficiency of labeling of the antibody, the labeled antibody plays an evaluant role, the fluorochrome plays an analyte role, and any buffers used in the assay play reagent roles
+
+3. An Assay (Detecting Expression Level and Location of a Protein of Interest)
+In a immunocytochemicsty assay, the cells play an evaluant role, the endogenous protein of interest plays an analyte role, and the molecular labels (labeled antibody probe, fluorescent reporter), as well as any buffers, fixatives, and detergents used, play reagent roles.
+
+This example illustrates how a given material entity (an antibody or fluorochrome) can bear many different research material roles (an incorporant role, an evaluant role, a reagent role), and how these roles are realized in different processes.</obo:REO_0000513>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000000">
+        <obo:REO_0000208>The reagent hierachy contains a core, disjoint set of reagent classes that includes &#39;antibody reagent&#39;, &#39;chemical reagent&#39;, &#39;cell line&#39;, &#39;nucleic acid reagent&#39;, &#39;protein reagent&#39;, and &#39;reagent library&#39;.  Each instance of a reagent or reagent class will fall under only one of these core categories.  In addition, several equivalent classes of reagents are defined (e.g. molecular label, moleculr probe, gene knockdown reagent), based on logically defined attributes exhibited by reagents exhibit (e.g. roles, functions, processes participating in, etc).  In addition to in addition to classifying under one of the core reagent classes listed above, a given reagents or reagent class might also classify as one or more of these equivalent classes (as inferred by the reasoner).  For example, a plasmid expressing an siRNA molecule targeted against a cellular gene product will classify as a nucleic acid reagent &gt; DNA construct &gt; siRNA construct, as well as a gene knockdown reagent (based on  the function of the siRNA product of this plasmid).</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000310">
+        <obo:REO_0000208>v3 def ((no account for fact that reagetns can be incorporants in material processing techniques that produce other reagents)
+
+a reagent role inhering in a processed molecular entity (includes single-chain, multi-chain complexes, and mixtures, collections) that is intended to participate in a chemical reaction or interaction as part of some scientific technique, to facilitate the generation of data about some other entity or the production of some material that does not derive from the bearer of the reagent role.
+or
+a reagent role inhering in a processed molecular entity (includes single-chain, multi-chain complexes, and mixtures, collections) that is gained through a planning process which specifies its intended use in assay or material processing technique, and is realized through the bearer&#39;s participation in some chemical reaction or interaction during: (1) an assay in which data is generated about some other entity; or (2) a material processing technique in which the specified output does not derive from the bearer of the reagent role (ie the bearer does not contribute significant material to the composition of the specified output)
+or
+a reagent role inhering in a processed molecular entity (includes single-chain, multi-chain complexes, and mixtures, collections) that is gained through a planning process which specifies its intended use as input into some technique, in which it will participate in some chemical reaction or interaction as part of either (1) an assay in which data is generated about some other entity; or (2) a material processing technique in which the specified output does not derive from the bearer of the reagent role (ie the bearer does not contribute significant material to the composition of the specified output).  The reagent role is realized through the bearer&#39;s participation in such a process.</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
+        <obo:REO_0000208>Old definition notes : 
+
+This includes processes such as material component separation and combination, as well as changes that alter the internal arrangement of an input material.
+
+OR
+
+a planned process which results in specified reorganization or structural changes to some input material, to generate some research material as output. This includes processes such as material component separation and combination,  as well as changes that alter the internal arrangement of an input material at a molecular or macroscopic level.
+
+OR
+
+A planned process which results in physical changes to a specified input material, such that matter comprising the input material is re-arranged at some level of granularity to generate some specified output material. Material processing is defined here as broadly as possible, to include any planned process where material input is spatially re-organized or undergoes structural changes.</obo:REO_0000208>
+        <obo:REO_0000208>We changed our minds on the below, and thus have reinstated the distinction between ReO material processing technique and OBI material processing, creating classes for each.
+
+We have decided for now to import the OBI material processing class and change label to material processing technique, as for our purposes all material processings in the scope of ReO and OBi (and likely all of the OBO foundry), have specified outputs of research materials (thus making them all reo:material processing techniques as we originally conceived of this class).  So to ease integration with OBI, the OBI material processing class was re-used here in this way, with a modified definition and additional axioms, including an extended logical definition to include the statement that the output must be a research materisl (which i beleive to be consistent with the implicit meaning of this class in OBI)
+
+So, in ReO, this class is used to subsume all techniques that generate or prepare materials for potential use in an investigation (ie via synthesis, collection, purification, etc).  Investigations here are considered broadly to include any planned processes aimed at producing information of a scientific nature, including activities as simple as collecting and storing a specimen for visual observation, where the visual observation is a type of scientific analysis where data about the physical properties of the specimen are gathered and analyzed.</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000211">
+        <obo:REO_0000208 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOTE here that research material is inferred by the reasoner to subsume all reagent classes, as well as the specimen class, despite the fact that &#39;research material&#39; is not an equivalent class. This is because of the fact that the inheres_in property is asserted to be functional, such that if two classes are ever asserted as the range of this property for the same domain, then it is inferred that these ranges are equivalent.  If I remove the assertion that inheres_in is funcitonal, then the reasonser does not infer the subsumbtions here.</obo:REO_0000208>
+        <obo:REO_0000208>Have decided for now that research materials are not neccessarily processed materials, and thus are asserted only as children of material entity. Examples of non-processed research materials include specimens which can be observed in nature or humans observed without processing (such as humans in a study on impact of stress related jobs and heart rate).
+
+So, while most research materials are processed, this is not always/neccessarily true (see specimen ex above . . . thus, the specimen class classified as a research material but not a processed material.</obo:REO_0000208>
+        <obo:REO_0000208>This annotation is obsolete because i have unobsoleted this class - in light of the fact that we decided that not all research materials are neccessarily processed materials.  So will change the OBI:processed material that was renamed processed research material class back to &#39;processed material&#39;, and reinstitue this ReO:research material class.
+
+Decided that, since in the scope of ReO, OBI (and probably all OBO foundry ontologies),  all material processings output a research material (since research material is defined so broadly) and are therefore equivalent to what reo intended as its material processing technique class.
+ - exception might be material processings that output clinical material??
+
+Therefore also we can say that OBI processed material is equivalent to reo:research material , and I guess we can say that all processed materials in the scope of OBI and ReO have a research material role
+  - again, perhaps not all if things like clinical specimens/samples for diagnostic analysis are included . . .which they are . . . so perhaps we should change this to biomedical material with children research material or clinical material?
+	
+SO OBSOLETED FOR NOW BOTH REO:MATERIAL PROCESSING TECHNIQUE AND REPLACED WITH OBI MATERIAL PROCESSING (CHANGED THE LABEL TO MATERIAL PROCESSING TECHNIQUE FORE REO), AND LIKEWISE OBSOELTED REO:RESEARCH MATERIAL AND REPLACED WITH OBI:PROCESSED MATERIAL (CHANGED LABEL TO PROCESSED RESEARCH MATERIAL, AND KEPT ROLE OF RESEARCH MATERIAL ROLE)
+
+This should help ease integration with OBI, but may have issues for using these classes beyond the realm of biomedical research, since we limit the domain/scope of these classes to entities in these domains.
+
+removed axioms has_role some &#39;research material role&#39; and is_specified_output_of some &#39;material processing technique when obsoleted</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000280">
+        <obo:REO_0000208>PROBLEM: Here, it our logical definition says that realization of a reagent role only through a particualr type of assay (detection of label) is sufficient to define a molecular label.  (There is no unifying function or disposition to cover all cases).  BUT this is not the case, as other reagent roles may be realized in such an assay (e.g. a buffer role), such that a buffer used in a detection of label assay could be wrongly inferred to be a molecular label.
+
+We need to decide what additional features are needed to ensure clear logical definition of a molecular label, and model this in the eq class axiom. Could a &#39;proxy role&#39; be applied here?  Or some disposition to serve as a proxy?</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <obo:REO_0000208>RESOLVED FEEDBACK TO ANNOTATION : 
+CARO, OBI (awaiting decision here on whether organisms are considered anatomical entities, and how to treat viruses and viriods.  Would eventually like to use CARO class here.)  At OBI Philly - this issue somewhat resolved as CARO will implement a &#39;gross anatomical entity&#39; class that covers all anatomical entities below organism and above cell (which is what is currently covered by OBI&#39;s &#39;anatomical entity&#39; class - so now OBI can jsut import this from CARO and be fully interoperable here)</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000659">
+        <obo:REO_0000208>Specimen collection is asserted as a subclass of material collection, and has one asserted child (sample collection). In addition, material component  separation processes such as extraction and purification are inferred to be children of specimen collection (by asserting that they have a specimen collection objective), since the outputs of such processes in OBI are asserted to have a specimen role.  This allows us to say that the specimen role is gained through a specimen collection process, and infer some but not all material component separation processes to be types of specimen collection processes (ie, material separations such as portioning are not collection processes).</obo:REO_0000208>
+        <obo:REO_0000208>Previous definition of &#39;specimen creation&#39;: &quot;a planned process in which some material entity is processed to serve as a specimen (ie an example of its type as input into some scientific invetigation).  Specimen creation will typically, but not neccessarily, involve collection and storage of the material of interest.&quot;
+
+Note that this definition required material processing  in the creation of a specimen - but this approach was abandoned becasue we believe that &#39;intent to study as an example of its kind&#39; is what is key, neccessary, and sufficient for being a specimen.  So specimens can be created (ie the specimen role conferred) merely by observation (see example annotation).</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0000001">
+        <obo:REO_0000208>MHB: a &#39;primary cell culture&#39; becomes a &#39;cell line&#39; upon its first subculture. </obo:REO_0000208>
+        <obo:REO_0000208>Consider C Mungall definition and comments from BFO Discuss mailing list: 
+
+&#39;cell line =def a population of cells which (1) the cells instantiate  
+the same specific type, (2) are experimental artefacts cultivated in  
+some medium (3) the cells are derived from the same ancestral cell or  
+population of cells (4) have the quality of self-renewability&#39;
+
+And consider additional comments on identity:
+
+&#39;A difficult question is the identity criteria - when does one cell  
+line instance become two? If a cell line instance of canonical cell  
+types acquires a mutation and becomes cancerous, it changes type by  
+virtue of the members of the population changing type, but is this a  
+new instance linked by a transformation_of relation? (those who do  
+not like their instantiation relations time-indexed would presumably  
+say yes)
+
+It would seem that best way to capture biologist usage is to treat  
+&quot;HeLa cell line&quot; as the name of a cell line instance, and to have  
+some other terms (&quot;portion&quot; terms perhaps) for the spatially  
+connected sub-populations as may be found in a petri dish in a  
+laboratory.&#39;
+
+URL: http://groups.google.com/group/bfo-discuss/browse_thread/thread/d2badf1c7cdbb851/a5762e456802a030?lnk=gst&amp;q=derives_from#a5762e456802a030</obo:REO_0000208>
+        <obo:REO_0000208>Cell lines are considered reagents in ReO because in many cases they can be argued to meet the reagent definition, which requires a reagent to :
+
+(1) be created with intent to be input into some scientific technique
+
+(2) bear a reagent role that is realized throguh participation in (or having parts participate in) some chemical reaction during some technique.
+
+(3) not bear an evaluant role (in the case that the technique is an assay), and not contribute significant matter to the output material (in the case that the technique is a material processing technique)  
+
+A central argument against cell lines being reagents is in cell-based ASSAYS is that they serve as evaluants about which data is generated.  ReO acknowledges that this is true for many but not all assays.  An evaluant role for a cell line is realized in assays that generate data about materials or processes at the cellular level of granularity (ie about the cells themselves). Examples include motility assays, differentiation assays, cell death assays, etc.  By contrast, a reagent role is realized for cell lines in assays that generate data about materials or processes at a subcellular level of granularity (ie molecular/biochemical processes occurring in or around on the cells), that are ‘facilitated’ by the environment the cell provides. Examples include (a) biochemical assays about subcellular processes such as transcription, translation, protein folding, or cell signaling, (b) cell biological assays about processes such as vesicular trafficking or organelle morphogenesis, or (c) pathogen assays about the activity of pathogens in the cellular environment (e.g virus plaque assays). In these cases, the data is not about the cells, but rather the molecules or pathogens within the cells.  In such cases, the cell line realizes a reagent role.
+
+In material processing techniques, cells are often incorporated into the specified output, but in other cases serve as reagent by facilitating the production of some separated output material.  For example, feeder cells in a cell culturing technique, or virus producing cells in techniques to generate viral stocks.  Here, cell lines realize a reagent role.</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000309">
+        <obo:REO_0000208>(V2 defs) These defs are not quite right because the stipulation that molecular entities are consumed or inactivated should not apply to molecular reagents (for ex, enzymes are not consumed or inactivated), but rather only to non-molecular reagents with molecular parts 
+
+a role inhering in a processed material entity that (1) is intended to be input into some scientific technique to facilitate the generation of data about some other entity, or the production of a material output that does not derive from the bearerof the reagent role, and (2) has molecular parts that participate in a chemical reaction or interaction during this technique through which the bearer is immediately consumed or inactivated.
+or
+a role inhering in a processed material entity that is intended to be (or have molecular parts that are) immediately consumed or inactivated in a chemical reaction or interaction as part of some scientific technique, to facilitate the generation of data about some other entity, or the production of a material output that does not derive from the bearer of the reagent role.</obo:REO_0000208>
+        <obo:REO_0000208>v3 def:
+a role inhering in a material entity that (1) is intended to be input into some scientific technique to facilitate the generation of data about some other entity, or the production of a material output that does not derive from the bearer of the reagent role, and (2) is comprised of molecular parts that participate in a chemical reaction or interaction during this technique
+
+or 
+
+**Note this is not the newest def:
+a role inhering in a processed material entity that (1) is intended to be input into some scientific technique to facilitate the generation of data about some other entity, or the production of a material output that does not derive from the bearer of the reagent role, and (2) participates in a chemical reaction or interaction during this technique, or has molecular parts that do so and are immediately consumed or inactivated as a result.</obo:REO_0000208>
+        <obo:REO_0000208>a role that is either a molecular reagent role or a non-molecular reagent role</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000436">
+        <obo:REO_0000208>Questioon is whether to define such that the class can include nucleic acid analogs such as morpholinos and peptide nucleic acids.  Here, I should be sure that our use is consistent with ChEBI definition/intended use of this term, and that the bases that make up morpholinos qualify as making up &#39;nucleotides&#39;.
+
+Indeed, polynucleotides are defined as consisting on nucleotides, and nucleotides are defined as having a phosphate . . . but not all nucleic analogs have phosphates (morpholinos do, peptide nucleic acids do not).  So, are morpholino &#39;bases&#39; nucleotides?  If so, are morpholinos polynucleotides?   If I classify them as such, how can I also group together all nucleic acid analogs (ie including ones like peptide nucleic acids that do not consist of nucleotides?)
+
+May want to elliminate this class, if nucleic acid ends up as the only child</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000159">
+        <obo:REO_0000208>When adding/modeling material processing classes in ReO, be sure to indicate with an axiom when the output of the process is a processed material and has a research material role, so that it will classify as a material processing technique (since research materials are now no longer a subclass of processed material, it does not work to assert that a process has an output of a research material for it to classify as a material processing technique  - 
+
+ACTUALLY, IT DOES :  but the converse is not true - ie that a research material can be defined as being output of a material processing techninque)
+
+All material processings that are techniques should be asserted under material processing technique, and inferred to be material processing techniques based on having an output that is a processed material that has a research material role.  NO - instead I will assert material processing techniques under material processing technique, and say that a material processing technique has output only some research material.  then I could say that a research material is anything that has a research material role or is output of a material processing technique.  As a result, i would not have to worry about developers having to indicate axiomatically that material processings with an output that is a research material &#39;has_specified_output some (has_role some &#39;research material role&#39;))&#39;  (and I could remove all such existing axioms) . . . which seems more convenient.  The burden then is on developers to be sure to assert material processings that have research material outputs as material processing techniques (which should be easy, as nearly all material processings in OBi and ReO are techniques.  
+
+With this new approach, things will be inferred to be a research material based on their being output from a material processing technique, instead of the reverse (things being inferred to be techniques based on their having a outputs that have a research material role.  I think this is more useful and intuitive to expect developers to model and users to understand.
+
+What implicaitons would this new approach have if I decide to elim the material processing technique class and jsut use OBI material processing . . .then I would have a situation where a research material is defined as being output of a material processing - which is not correct.  So be aware of the issues this could cause.</obo:REO_0000208>
+        <obo:REO_0000208>11-6-11
+
+unobsoleted on 11-9-11 because i changed mind about not needing this class
+
+-obsoleted reo:material processing technique class (included removing logical def : &#39;planned process&#39; and (has_specified_output some &#39;research material&#39;) and axiom: achieves_planned_objective some &#39;material processing objective&#39;, and changed label of OBI:material processing to &#39;material processing technique&#39; . . . 
+
+as BP suggested - since really all material processings in scope of OBI (and indeed of obo foundry) have output that are research materials . . .and simply renaming this OBI class and adding axioms that make it classify undre reo:technique is an easier modleing solution, partic for integrating with OBI down the road.</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000552">
+        <obo:REO_0000208>Definition when this was &#39;molecular analog reagent role:
+&#39;a reagent role inhering in a synthetic molecular entity that is designed to exhibit structural similarity to a naturally occurring molecule.  This similarity is such that the bearer can mimic some chemical or biological activity of this molecular entity, while also exhibiting specified structural differences that allow it to probe or alter the molecular environment of the bearer in some way.</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000503">
+        <obo:REO_0000208>(removed this axiom for now, because the immunization is not a part of the immunization technique - it follows it - therefore the immunization protocol would not specify the occurrence of an immunization process)
+
+Note here that we cannot say that an immunization technique necessarily results_in some immunization (becasue not all will successfuly trigger an adaptive immune response).  So if we want to link the immunization technique to the biological process of immunization that we INTEND it to initiate, we test out the design pattern below : 
+
+&#39;immunization technique&#39; achieves_specification some (specifies_occurrence_of some immunization)
+
+This could be condensed to some shortcut relation such as &#39;intended to result in&#39;?</obo:REO_0000208>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

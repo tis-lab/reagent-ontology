@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2011/11/reo-sandbox.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/11/reo-sandbox.owl"
+     xmlns:PATO="http://purl.obolibrary.org/obo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:NCBITaxon="http://purl.org/obo/owl/NCBITaxon#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:CHEBI="http://purl.obolibrary.org/obo/"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2011/11/reo-sandbox.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/reo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+        </owl:propertyChainAxiom>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+    <!-- http://purl.obolibrary.org/obo/REO_0000373 -->
+
+
+
+    
+    
+   
+        <!-- http://purl.obolibrary.org/obo/REO_0000529 -->
+    
+        <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000529">
+            <rdfs:label>multicellular organism cell in vivo</rdfs:label>
+            <owl:equivalentClass>
+                <owl:Class>
+                    <owl:intersectionOf rdf:parseType="Collection">
+                        <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000371"/>
+                        <owl:Restriction>
+                            <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                            <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000012"/>
+                        </owl:Restriction>
+                    </owl:intersectionOf>
+                </owl:Class>
+            </owl:equivalentClass>
+    </owl:Class>
+    
+    
+    
+    
+        <!-- http://purl.obolibrary.org/obo/REO_0000136 -->
+    
+        <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000136">
+            <rdfs:label xml:lang="en">multicellular organism cell ex vivo</rdfs:label>
+            <owl:equivalentClass>
+                <owl:Class>
+                    <owl:intersectionOf rdf:parseType="Collection">
+                        <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000371"/>
+                        <owl:Restriction>
+                            <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#transformation_of"/>
+                            <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000003"/>
+                        </owl:Restriction>
+                        <owl:Restriction>
+                            <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                            <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                        </owl:Restriction>
+                    </owl:intersectionOf>
+                </owl:Class>
+            </owl:equivalentClass>
+            <rdfs:subClassOf>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
+                    <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                </owl:Restriction>
+            </rdfs:subClassOf>
+            <obo:IAO_0000117>PERSON: Matthew Brush</obo:IAO_0000117>
+            <obo:IAO_0000115>a cell that has been removed from a multicellular organism</obo:IAO_0000115>
+            <obo:IAO_0000118>cell ex vivo (the &#39;multicellular organism&#39; part of this label is really implied by it being ex vivo)</obo:IAO_0000118>
+            <obo:REO_0000139>the axiom requiring that cells ex vivo be transformations of some cell and part of some multicellular organism is meant to capture the notion that we consider &#39;ex vivo&#39; to mean that a cell (or other anatomical entity) was once a part of an organism (as opposed to the looser requirement that it is not currently part of an organism).  This is why cell culture cells are not considered to be cells ex vivo, because while  they are &#39;derived from&#39; cells in vivo, they are not &#39;transformations&#39; of cells in vivo as they themselves were never part of an organism.  
+    
+    However, given the ambiguity around the &#39;transformation_of&#39; property, we are not sure this is the correct way to model this notion.</obo:REO_0000139>
+    </owl:Class>
+    
+    
+    
+    
+
+    
+    
+        <!-- http://purl.obolibrary.org/obo/REO_0000267 -->
+    
+        <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000267">
+            <rdfs:label>unicellular organism ex environment</rdfs:label>
+            <owl:equivalentClass>
+                <owl:Class>
+                    <owl:intersectionOf rdf:parseType="Collection">
+                        <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000064"/>
+                        <owl:Restriction>
+                            <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#transformation_of"/>
+                            <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REO_0000361"/>
+                        </owl:Restriction>
+                        <owl:Restriction>
+                            <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                            <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/REO_0000359"/>
+                            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                        </owl:Restriction>
+                    </owl:intersectionOf>
+                </owl:Class>
+            </owl:equivalentClass>
+            <rdfs:comment>as with cell ex vivo, a unicellular organism ex environment must once have been part of its &#39;natural environment&#39; (ie not some articifial environment as a result of some intentional collection).  Hence the axiom requiring that members of this class are transformations of some unicellular organism in environment.  however, this distinciton is less clear than for cell ex vivo, as multicellular organism cells have a clear cut &#39;natural environment&#39; as part of some organism - while unicellular organisms do not (ie the natural environment of many will include a laboratory bench, so it needs to be clear that artifical environemnt suggests intentioanl colelciton and transfer of the organism to a research setting)</rdfs:comment>
+            <obo:IAO_0000115>a unicellular organism that has been removed from its natural environment</obo:IAO_0000115>
+            <obo:IAO_0000118>single cell organism ex environment
+    
+    cell ex environment (could just call this a &#39;cell ex environment&#39;, as by definition an ex environment cell must be an independent organism?) </obo:IAO_0000118>
+    </owl:Class>
+    
+    
+        <!-- http://purl.obolibrary.org/obo/REO_0000361 -->
+    
+        <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000361">
+            <rdfs:label>unicellular organism in environment</rdfs:label>
+            <owl:equivalentClass>
+                <owl:Class>
+                    <owl:intersectionOf rdf:parseType="Collection">
+                        <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000064"/>
+                        <owl:Restriction>
+                            <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                            <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REO_0000359"/>
+                        </owl:Restriction>
+                    </owl:intersectionOf>
+                </owl:Class>
+            </owl:equivalentClass>
+            <obo:IAO_0000118>single cell orgnanism in environment</obo:IAO_0000118>
+            <obo:REO_0000181>should likely live in OBI</obo:REO_0000181>
+            <obo:IAO_0000115>a unicellular organism living in its natural environment</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000281">
+        <rdfs:label>targeted molecular label</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000280"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REO_0000358"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+        <obo:IAO_0000118>non-covalent label</obo:IAO_0000118>
+        <obo:IAO_0000115>a molecular label that is capable of autonomous non-covalent association with a molecular target</obo:IAO_0000115>
+        <obo:IAO_0000118>targeted molecular tracer</obo:IAO_0000118>
+        <obo:IAO_0000118>molecular probe</obo:IAO_0000118>
+        <obo:REO_0000192>We should also create a relation or design pattern for this class of labels to allow users to relate the targeted label to its molecular target (e.g. has_target some molecular target) . . . are there any existing relations that specify binding/non-covalent interactions?</obo:REO_0000192>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000284 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000284">
+        <rdfs:label>covalent molecular label</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000280"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REO_0000357"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+        <obo:IAO_0000118>molecular tag</obo:IAO_0000118>
+        <obo:IAO_0000118>covalent molecular tracer</obo:IAO_0000118>
+        <obo:REO_0000300>Keeping these classes for alternative approach for molecular label calssification (ie swapping order of axis 1 and 2) in the sandbox for now instead of depracating . . . so that if want to switch back, can easily move these back into reo.owl and take out the &#39;melec reporter&#39; and molec tracker&#39; classes.</obo:REO_0000300>
+        <obo:IAO_0000115>a molecular label that is not capable of autonomous, non-covalent association with a molecular target, such that it must be covalenly attached to an analyte of interest, or to a targeted molecular label that can direct it to an analyte.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000357">
+        <rdfs:label>covalent molecular label role</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000178"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000228"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000171"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/REO_0000696"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REO_0000102"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000231>a molecular label role inhering in a molecular entity that is not capable of autonomous, non-covalent association with a molecular target, such that it must be covalenly attached to an analyte of interest, or to a targeted molecular label that can direct it to an analyte.</obo:IAO_0000231>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000358 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000358">
+        <rdfs:label>targeted molecular label role</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000093"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000174"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000171"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/REO_0000696"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REO_0000102"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a molecular label role inhering in a molecular entity that is capable of autonomous non-covalent association with a molecular target</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000424 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000424">
+        <rdfs:label>test immortalized and passaged cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000426"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001991"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000877"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>this test class should classify as a passaged cell line because it is the output of some cell line immortalization, and cell line immortalization has part some cell culture passaging, and passaged cell line is defined as being specified output of some cell culture passaging or has_part some cell culture passaging. 
+
+want to test also if we change the definition of passaged cell line by removing the &#39;or has_part some cell culture passaging&#39;, but add a property chain to has_specified_output that says &#39;is_specified_output_of o has_part is subclass of is_specified_output_of&#39;, then this test cell line should still classify as a passaged cell line because this property chain basically says that the has_part relation is transitive across is_specified_output_of (such that if me1 is specified output of some process p1 that has_part process p2 that has_specified_output me2, then me2 is inferred to also be the specified output of p1)</rdfs:comment>
+        <obo:IAO_0000115>test class used to illustrate the utility of property chains as a mechanism to tell your ontology to impose transitivity across certain property combinations</obo:IAO_0000115>
+        <rdfs:comment>it should be inferencable that if something (me1 - immortal cell line)) is the output of a process (p1 - cell line immortalization) that necessarily has as part some other process (p2 - cell passaging), then me1 (immortal cell line)  is also necessarily the output of p2 (cell passaging)
+
+to achieve this, create a property chain on is_output_of that says this property has subclass &#39;is_output_of   o  has_part&#39; , which means that if  me1 is_output_of  p1  and p1  has_part p2 and p2 has output me2, then me2 is related to p1 via the is_output_of relation.  
+
+so, in our example, if  &#39;test immortal and passaged cell line&#39; is_output_of cell line immortalization, and cell line immortalization has_part cell culture passaging, and cell culture passaging has_output passaged cell culture, then passaged cell culture is output_of cell line immortalization, and thus &#39;test immortal and passaged cell line&#39; will classify as a passaged cell line
+
+at present, I keep this test case class and the property chain in reo-sandbox.owl.  to see it in action, remove the clause &#39;or (has_part some cell culturing)&#39; from the logical def of passaged cell culture, and the test case class should still classify as a passaged cell culture in virtue of the property chain statement on &#39;is_specified_output_of&#39;
+</rdfs:comment>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000426 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000426">
+        <rdfs:label>test class</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000427">
+        <rdfs:label>sandbox class</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <obo:IAO_0000115>home for all classes living in the reo-sandbox.owl file (all such classes are asserted in some location within the ontology, as well as asserted here to allow grouping and visualization of all sandbox classes toegether)</obo:IAO_0000115>
+        <rdfs:comment>seems like moving classes to live in the sandbox can be used as an alternative to obsoleting, if you want to be able to see how the class was used and reasoned over, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000499 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000499">
+        <rdfs:label>material processing procedure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000159"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/REO_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:REO_0000192>testing idea of making a class for &#39;compound techniques&#39; . . . ie those that are comprised of several more fundamental techniques.  Would need to convert to defined class to trigger inferred hierarhcy creation . . . but dont want to do this quite yet.  
+    
+    Could help with possible confusion between &#39;procedures&#39; like cell culturing/maintenance (defined as the overall process of maintaining cells in culture,which includes many more fundamental techniques such as feeding, passaging, etc), and cell culture technique (defined as more fundamental techniques involved in the proces sof cell culturing).
+    
+    Seems analogous to investigations being comprised of several assays?</obo:REO_0000192>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000508 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000508">
+        <rdfs:label>mouse cell culture</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000396"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10090"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,168 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/mod_import-ontofox.owl
+
+[Source ontology]
+MOD
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/MOD_00006 #
+http://purl.obolibrary.org/obo/MOD_00030 #
+http://purl.obolibrary.org/obo/MOD_00031 #
+http://purl.obolibrary.org/obo/MOD_00033 #
+http://purl.obolibrary.org/obo/MOD_00034 #
+http://purl.obolibrary.org/obo/MOD_00042 #
+http://purl.obolibrary.org/obo/MOD_00045 #
+http://purl.obolibrary.org/obo/MOD_00046 #
+http://purl.obolibrary.org/obo/MOD_00047 #
+http://purl.obolibrary.org/obo/MOD_00048 #
+http://purl.obolibrary.org/obo/MOD_00050 #
+http://purl.obolibrary.org/obo/MOD_00064 #
+http://purl.obolibrary.org/obo/MOD_00078 #
+http://purl.obolibrary.org/obo/MOD_00083 #
+http://purl.obolibrary.org/obo/MOD_00087 #
+http://purl.obolibrary.org/obo/MOD_00113 #
+http://purl.obolibrary.org/obo/MOD_00127 #
+http://purl.obolibrary.org/obo/MOD_00128 #
+http://purl.obolibrary.org/obo/MOD_00160 #
+http://purl.obolibrary.org/obo/MOD_00213 #
+http://purl.obolibrary.org/obo/MOD_00215 #
+http://purl.obolibrary.org/obo/MOD_00222 #
+http://purl.obolibrary.org/obo/MOD_00237 #
+http://purl.obolibrary.org/obo/MOD_00394 #
+http://purl.obolibrary.org/obo/MOD_00396 #
+http://purl.obolibrary.org/obo/MOD_00427 #
+http://purl.obolibrary.org/obo/MOD_00438 #
+http://purl.obolibrary.org/obo/MOD_00448 #
+http://purl.obolibrary.org/obo/MOD_00693 #
+http://purl.obolibrary.org/obo/MOD_00696 #
+http://purl.obolibrary.org/obo/MOD_00703 #
+http://purl.obolibrary.org/obo/MOD_00723 #
+http://purl.obolibrary.org/obo/MOD_00783 #
+http://purl.obolibrary.org/obo/MOD_00806 #
+http://purl.obolibrary.org/obo/MOD_00812 #
+http://purl.obolibrary.org/obo/MOD_00813 #
+http://purl.obolibrary.org/obo/MOD_00814 #
+http://purl.obolibrary.org/obo/MOD_00818 #
+http://purl.obolibrary.org/obo/MOD_00822 #
+http://purl.obolibrary.org/obo/MOD_01048 #
+http://purl.obolibrary.org/obo/MOD_01148 #
+http://purl.obolibrary.org/obo/MOD_01149 #
+http://purl.obolibrary.org/obo/MOD_01150 #
+http://purl.obolibrary.org/obo/MOD_01187 #
+http://purl.obolibrary.org/obo/MOD_01240 #
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/MOD_00006 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00693
+http://purl.obolibrary.org/obo/MOD_00030 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00031 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00033 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00034 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00033
+http://purl.obolibrary.org/obo/MOD_00042 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00696
+http://purl.obolibrary.org/obo/MOD_00045 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00696
+http://purl.obolibrary.org/obo/MOD_00046 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00696
+http://purl.obolibrary.org/obo/MOD_00047 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00696
+http://purl.obolibrary.org/obo/MOD_00048 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00696
+http://purl.obolibrary.org/obo/MOD_00050 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00394
+http://purl.obolibrary.org/obo/MOD_00064 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00394
+http://purl.obolibrary.org/obo/MOD_00078 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00427
+http://purl.obolibrary.org/obo/MOD_00083 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00427
+http://purl.obolibrary.org/obo/MOD_00087 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00438
+http://purl.obolibrary.org/obo/MOD_00113 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00703
+http://purl.obolibrary.org/obo/MOD_00127 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00128 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00160 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00693
+http://purl.obolibrary.org/obo/MOD_00213 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00693
+http://purl.obolibrary.org/obo/MOD_00215 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00693
+http://purl.obolibrary.org/obo/MOD_00222 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00693
+http://purl.obolibrary.org/obo/MOD_00237 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00394 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00396 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00693
+http://purl.obolibrary.org/obo/MOD_00427 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00438 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00448 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00693 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00696 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00703 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00723 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00394
+http://purl.obolibrary.org/obo/MOD_00783 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00427
+http://purl.obolibrary.org/obo/MOD_00806 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00448
+http://purl.obolibrary.org/obo/MOD_00812 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00693
+http://purl.obolibrary.org/obo/MOD_00813 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00693
+http://purl.obolibrary.org/obo/MOD_00814 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00693
+http://purl.obolibrary.org/obo/MOD_00818 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_00822 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00033
+http://purl.obolibrary.org/obo/MOD_01048 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_01148 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_01149 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_01150 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_01187 #
+subClassOf http://purl.obolibrary.org/obo/PR_000025513
+http://purl.obolibrary.org/obo/MOD_01240 #
+subClassOf http://purl.obolibrary.org/obo/MOD_00033
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000115  #definition
+http://purl.obolibrary.org/obo/IAO_0000119  #definition source
+http://purl.obolibrary.org/obo/IAO_0000117  # definition editor
+http://purl.obolibrary.org/obo/IAO_0000118  # alternative term
+http://purl.obolibrary.org/obo/IAO_0000111  # editor preferred term
+http://purl.obolibrary.org/obo/IAO_0000112  # example
+http://purl.obolibrary.org/obo/IAO_0000116  # editor note
+http://purl.obolibrary.org/obo/IAO_0000114  # has curation status
+http://purl.obolibrary.org/obo/IAO_0000589  # OBO Foundry unique label
+http://purl.obolibrary.org/obo/IAO_0000232  # curator note
+http://purl.obolibrary.org/obo/IAO_xref   # IAO_xRef

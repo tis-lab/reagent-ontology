@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/reo/external/UBERON_import.owl.#"
+     xml:base="http://purl.obolibrary.org/obo/reo/external/UBERON_import.owl."
+     xmlns:obo="http://purl.org/obo/owl/obo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:CARO="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/reo/external/UBERON_import.owl."/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/obo/owl/obo#IAO_0000412"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon#output_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/uberon#output_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">output_of</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/obo#output_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/obo#output_of">
+        <rdfs:label xml:lang="en">obsolete_output_of</rdfs:label>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#participates_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000002">
+        <rdfs:label xml:lang="en">uterine cervix</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005156"/>
+        <CARO:IAO_0000115 xml:lang="en">
+  Lower, narrow portion of the uterus where it joins with the top end of the vagina.
+  </CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000066">
+        <rdfs:label xml:lang="en">fully formed stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000092"/>
+        <CARO:IAO_0000115 xml:lang="en">The stage of development at which the animal is fully formed, including immaturity and maturity. Includes both juvenile stage, and adult stage.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000067">
+        <rdfs:label xml:lang="en">embryo stage part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">A stage that is part of the embryo stage.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000068">
+        <rdfs:label xml:lang="en">embryo stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">A life cycle stage that starts with fertilization and ends with the fully formed embryo.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000069">
+        <rdfs:label xml:lang="en">larval stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000092"/>
+        <CARO:IAO_0000115 xml:lang="en">a distinct juvenile stage many animals undergo before metamorphosis into adults. Animals with indirect development such as insects, amphibians, or cnidarians typically have a larval phase of their life cycle.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000070">
+        <rdfs:label xml:lang="en">pupal stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000092"/>
+        <CARO:IAO_0000115 xml:lang="en">A life stage of some insects undergoing transformation. The pupal stage is found only in holometabolous insects, those that undergo a complete metamorphosis, going through four life stages; embryo, larva, pupa and imago.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000071">
+        <rdfs:label xml:lang="en">death stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">End of the life of an organism.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000092">
+        <rdfs:label xml:lang="en">post-embryonic stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">stage succeeding embryo, including mature structure</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000104">
+        <rdfs:label xml:lang="en">life cycle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">An entire span of an organism&apos;s life, commencing with the zygote stage and ending in the death of the organism.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
+        <rdfs:label xml:lang="en">life cycle stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion"/>
+        <CARO:IAO_0000115 xml:lang="en">A spatiotemporal region encompassing some part of the life cycle of an organism.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000106">
+        <rdfs:label xml:lang="en">zygote stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">A stage at which the organism is a single cell produced by means of sexual reproduction.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000107">
+        <rdfs:label xml:lang="en">cleavage stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000067"/>
+        <CARO:IAO_0000115 xml:lang="en">The first few specialized divisions of an activated animal egg; Stage consisting of division of cells in the early embryo. The zygotes of many species undergo rapid cell cycles with no significant growth, producing a cluster of cells the same size as the original zygote. The different cells derived from cleavage are called blastomeres and form a compact mass called the morula. Cleavage ends with the formation of the blastula.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000108">
+        <rdfs:label xml:lang="en">blastula stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">An early stage of embryonic development in animals. It is produced by cleavage of a fertilized ovum and consists of a spherical layer of around 128 cells surrounding a central fluid-filled cavity called the blastocoel. The blastula follows the morula and precedes the gastrula in the developmental sequence.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000109">
+        <rdfs:label xml:lang="en">gastrula stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">A stage defined by complex and coordinated series of cellular movements that occurs at the end of cleavage during embryonic development of most animals. The details of gastrulation vary from species to species, but usually result in the formation of the three primary germ layers, ectoderm, mesoderm and endoderm.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000110">
+        <rdfs:label xml:lang="en">neurula stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">Staged defined by the formation of a tube from the flat layer of ectodermal cells known as the neural plate. This will give rise to the central nervous system.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000111">
+        <rdfs:label xml:lang="en">organogenesis stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">A stage at which the ectoderm, endoderm, and mesoderm develop into the internal organs of the organism.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000112">
+        <rdfs:label xml:lang="en">juvenile stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">The stage of being a sexually immature adult animal.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000113">
+        <rdfs:label xml:lang="en">post-juvenile adult stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">The stage of being a sexually mature adult animal.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002369">
+        <rdfs:label xml:lang="en">adrenal gland</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004120"/>
+        <CARO:IAO_0000115 xml:lang="en">Either of a pair of complex endocrine organs near the anterior medial border of the kidney consisting of a mesodermal cortex that produces glucocorticoid, mineralocorticoid, and androgenic hormones and an ectodermal medulla that produces epinephrine and norepinephrine[BTO].</CARO:IAO_0000115>
+        <CARO:IAO_0000118 xml:lang="en">adrenal</CARO:IAO_0000118>
+        <CARO:IAO_0000118 xml:lang="en">adrenal capsule</CARO:IAO_0000118>
+        <CARO:IAO_0000118 xml:lang="en">adrenal medulla cell</CARO:IAO_0000118>
+        <CARO:IAO_0000118 xml:lang="en">atrabiliary capsule</CARO:IAO_0000118>
+        <CARO:IAO_0000118 xml:lang="en">epinephros</CARO:IAO_0000118>
+        <CARO:IAO_0000118 xml:lang="en">glandula suprarenalis</CARO:IAO_0000118>
+        <CARO:IAO_0000118 xml:lang="en">interrenal gland</CARO:IAO_0000118>
+        <CARO:IAO_0000118 xml:lang="en">suprarenal capsule</CARO:IAO_0000118>
+        <CARO:IAO_0000118 xml:lang="en">suprarenal gland</CARO:IAO_0000118>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004120">
+        <rdfs:label xml:lang="en">mesoderm-derived structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <CARO:IAO_0000115 xml:lang="en">
+  An anatomical structure that develops (entirely or partially) from the mesoderm.
+  </CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004707 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004707">
+        <rdfs:label xml:lang="en">pharyngula stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">A stage that follows the blastula, gastrula and neurula stages. At the pharyngula stage, all vertebrate embryos show remarkable similarities.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004728 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004728">
+        <rdfs:label xml:lang="en">amphibian larval stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000069"/>
+        <CARO:IAO_0000115 xml:lang="en">Amphibian larvae, sometimes called pollywogs or tadpoles, hatch from eggs and begin to grow limbs and other adult physical features at various times, depending on the species, before they metamorphose into the adult form.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004729 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004729">
+        <rdfs:label xml:lang="en">nematode larval stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000069"/>
+        <CARO:IAO_0000115 xml:lang="en">Nematode larval development begins with the newly hatched first-stage larva (L1) and ends with the end of the last larval stage (for example the fourth larval stage (L4) in C. elegans). Each stage of nematode larval development is characterized by proliferation of specific cell lineages and an increase in body size without alteration of the basic body plan. Nematode larval stages are separated by molts in which each stage-specific exoskeleton, or cuticle, is shed and replaced anew.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004730 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0004730">
+        <rdfs:label xml:lang="en">instar larval stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000069"/>
+        <CARO:IAO_0000115 xml:lang="en">This begins with the newly hatched first-instar larva, through its maturation to the end of the last larval stage. An example of this process is found in Drosophila melanogaster.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0005156 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005156">
+        <rdfs:label xml:lang="en">reproductive structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004120"/>
+        <CARO:IAO_0000115 xml:lang="en">
+  An anatomical structure that is part of the reproductive system.
+  </CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007220">
+        <rdfs:label xml:lang="en">late embryonic stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007221 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007221">
+        <rdfs:label xml:lang="en">neonate stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000115 xml:lang="en">Of or pertaining to the period of time immediately following birth, or to the newborn.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007222">
+        <rdfs:label xml:lang="en">late adult stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000113"/>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007232">
+        <rdfs:label xml:lang="en">2 cell stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007233">
+        <rdfs:label xml:lang="en">4 cell stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007234">
+        <rdfs:label xml:lang="en">4-8 cell stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0007236">
+        <rdfs:label xml:lang="en">8 cell stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0008264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0008264">
+        <rdfs:label xml:lang="en">echinopluteus larval stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000069"/>
+        <CARO:IAO_0000115 xml:lang="en">Larval stage in echinoderms characterized by a planktonic and feeding larval form that possesses limb-like outgrowths bearing ciliated bands.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/uberon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+

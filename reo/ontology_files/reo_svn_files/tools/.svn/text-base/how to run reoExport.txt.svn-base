@@ -1,0 +1,3 @@
+%java -classpath owlapi-3.2.4.jar;.  reo.Export
+
+java -classpath org.semanticweb.owl.owlapi.jar;.  reo.Export

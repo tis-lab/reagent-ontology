@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http:/purl.obolibrary.org/obo/reo-doc.owl#"
+     xml:base="http:/purl.obolibrary.org/obo/reo-doc.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http:/purl.obolibrary.org/obo/reo-doc.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/reo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/REO_0000207"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000212">
+        <obo:REO_0000208>other possibility here is that we make &#39;experiment&#39; equivalent to what OBI means by &#39;study design execution&#39; - which refers to all of the assays and techniques executed during this phase of an investigation, but not planning or documenting or analysis processes.
+
+In this sense, it is essentially the totality of all assays and techniques specified by a investigation plan specification.
+
+I dont like this, becasue it is not intuitively what I think of as an experiment - and experiment is a more limited/self-contained process that does have a planning stage and analysis stage as part.</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000112">
+        <obo:REO_0000208>I have defined specimen role here somewhat consistently with OBI . . . OBI says the role is realized in an investigation (assay?), while I say it is realized in any scientific technique.  
+
+An issue with this interpretation, however, regards the distinction between specimen and evaluant and reagent role. When a specimen is input into an assay (as is often logically asserted in OBI), it seems that the assay will necessarily realize either a reagent or evaluant role of the specimen. The realization of a specimen role in addition to one of these  seems superfluous. 
+
+Another approach is that a specimen role has nothing to do with its input into an assay, and that collection and storage alone realize this role.  However, if this is the case, then the role is gained and realized in the same process of speciment collection, and therefore the role is realized at all times that it inheres in its bearer, and should therefore be a quality.
+
+A third option is that the specimen role inheres at all times in a material entity, particularly &#39;natural&#39; entities studied by researchers (e.g. microorganisms in the soil, blood in a field mouse, copper on a mountainside, etc).  So the specimen role is gained essentially at the origin of the entity, and realized in the collection of the entity.</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000001">
+        <obo:REO_0000208>a role inhering in a material entity and realized through its participation in an experimental process or scientific technique aimed at producing, detecting, measuring, or examining some biological, chemical, or physical substance or process.
+
+ALT DEF: a role inhering in a material entity and realized through its participation in (1) an experimental process aimed at detecting, measuring, or examining some substance or process; or (2)  a scientific technique aimed at producing materials (ie specimens or other reagents)  to be used in such experimental processes.
+
+ALT DEF: a role inhering in a material entity and realized through its participation in (1) an assay aimed at detecting, measuring, or examining some substance or process; or (2)  a material processing technique aimed at producing materials (evaluants or other reagents)  to be used in such an assay.
+
+ALT DEF: a role inhereing in a material entity generated to participate in (1) an assay where it contributes to the detection, measurement, or examination of some other substance or process; or (2) a material processing technique aimed at producing materials (ie specimens or other reagents) to be used in such an assay.</obo:REO_0000208>
+        <obo:REO_0000208>It necessary for us to distinguish reagents from other participants in experimental processes aimed at the goals, such as instruments and specimens, as these material entities would also fit the definition currently provided (as of 10-3-11). Perhaps the distinction is that reagents neccessarily participate in (or have parts that participate in) an experimental process or technique, AND are altered/consumed therein by some chemical reaction.  By contrast, instruments are not consumed or have parts that are consumed in a chemical reaction during an investigation? In addition, we might say that reagents, unlike specimens, are NOT the &#39;subject&#39; of an experiment/investigation (ie that about which data is generated or knowledge is ultimately sough).
+
+The use of things like cell lines, reporter constructs, and recombinant proteins in certain experimental contexts (where they can bee seen as the &#39;subject&#39; about which data is generated) still poses problems - as we would like to consider these entities to be reagents. Perhpas we can say that a reagent (in such cases) can be the &#39;subject&#39; of an experiment but not of an investigation (in that the investigation seeks knowledge about the natural things in medicine and biology for which such reagents serve as &#39;proxy specimens&#39;).  
+
+See &#39;ReO-development editor note&#39; on the &#39;investigation&#39; class for more on this idea.</obo:REO_0000208>
+        <obo:REO_0000208>It necessary for us to distinguish reagents from other participants in experimental processes aimed at the goals, such as instruments and specimens, as these material entities would also fit the definition currently provided (as of 10-3-11). Perhaps the distinction is that reagents neccessarily participate in (or have parts that participate in) an experimental process or technique, AND are altered/consumed therein by some chemical reaction.  By contrast, instruments are not consumed or have parts that are consumed in a chemical reaction during an investigation? In addition, we might say that reagents, unlike specimens, are NOT the &#39;subject&#39; of an experiment/investigation (ie that about which data is generated or knowledge is ultimately sought)</obo:REO_0000208>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000000">
+        <obo:REO_0000208>Consider the idea that in some cases, reagents can serve as &#39;proxy specimens&#39; in experiments where data is generated about the reagent, but knowledge is ultimately sought about some biological entity the reagent represents/models. Examples include cell line-based  experiments, where the cell line is a proxy for a tissue or organism about which knowledge is ultimately sought, and reporter construct-based studies where the reporter construct serves as a proxy for gene activity in a living organism.  In such studies, we do we consider the cell line or reporter construct to be a reagent, or a specimen, or neither, or both?  What is the precise definition of a specimen . . . OBI says only that a specimen is &#39; . . .  a material entity for potential use as an input during an investigation&#39;</obo:REO_0000208>
+        <obo:REO_0000208>It remains unclear if we can say that a reagent is the output of some OBI:material processing, or only that is is an output of some OBI:planned process.  This is because of inconsistencies and vague definitions provided in OBI for &#39;processed material&#39;, &#39;material processing&#39;, and &#39;material transformation objective&#39;, regarding the nature of the &#39;physical change&#39; that occurs to an input into a &#39;material processing&#39;.  Address this issue with OBI, and then attend to finalizing the position of reagent in ReO.</obo:REO_0000208>
+        <obo:REO_0000208>a material entity that bears a reagent role realized through its participation in an experimental process or scientific technique aimed at producing, detecting, measuring, or examining some substance or process.
+
+ALT DEF:  a material entity generated  to participate in (1) an experimental process aimed at detecting, measuring, or examining some substance or process; or (2) a scientific technique aimed at producing materials (ie specimens or other reagents)  to be used in such experimental processes.
+
+ALT DEF:  a material entity generated  to participate in (1) an experimental process where it contributes to the detection, measurment, or examination of some other substance or process; or (2) a scientific technique aimed at producing materials (ie specimens or other reagents)  to be used in such experimental processes.
+
+ALT DEF:  a material entity generated  to participate in (1) an assay where it contributes to the detection, measurment, or examination of some other substance or process; or (2) a material processing technique aimed at producing materials (ie specimens or other reagents)  to be used in such an assay.</obo:REO_0000208>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

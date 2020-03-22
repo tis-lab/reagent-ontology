@@ -1,0 +1,66 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/reo/external/DOID_import-ontofox.owl
+
+[Source ontology]
+DOID
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/DOID_0050687 #
+http://purl.obolibrary.org/obo/DOID_12858 #
+http://purl.obolibrary.org/obo/DOID_1289 #
+http://purl.obolibrary.org/obo/DOID_14566 #
+http://purl.obolibrary.org/obo/DOID_162 #
+http://purl.obolibrary.org/obo/DOID_299 #
+http://purl.obolibrary.org/obo/DOID_305 #
+http://purl.obolibrary.org/obo/DOID_331 #
+http://purl.obolibrary.org/obo/DOID_4 #
+http://purl.obolibrary.org/obo/DOID_7 #
+http://purl.obolibrary.org/obo/DOID_863 #
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/DOID_0050687 #
+subClassOf http://purl.obolibrary.org/obo/DOID_162
+http://purl.obolibrary.org/obo/DOID_12858 #
+subClassOf http://purl.obolibrary.org/obo/DOID_1289
+http://purl.obolibrary.org/obo/DOID_1289 #
+subClassOf http://purl.obolibrary.org/obo/DOID_331
+http://purl.obolibrary.org/obo/DOID_14566 #
+subClassOf http://purl.obolibrary.org/obo/DOID_4
+http://purl.obolibrary.org/obo/DOID_162 #
+subClassOf http://purl.obolibrary.org/obo/DOID_14566
+http://purl.obolibrary.org/obo/DOID_299 #
+subClassOf http://purl.obolibrary.org/obo/DOID_305
+http://purl.obolibrary.org/obo/DOID_305 #
+subClassOf http://purl.obolibrary.org/obo/DOID_0050687
+http://purl.obolibrary.org/obo/DOID_331 #
+subClassOf http://purl.obolibrary.org/obo/DOID_863
+http://purl.obolibrary.org/obo/DOID_4 #
+subClassOf http://www.ifomis.org/bfo/1.1/snap#Disposition
+http://purl.obolibrary.org/obo/DOID_7 #
+subClassOf http://purl.obolibrary.org/obo/DOID_4
+http://purl.obolibrary.org/obo/DOID_863 #
+subClassOf http://purl.obolibrary.org/obo/DOID_7
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000115  #definition
+http://purl.obolibrary.org/obo/IAO_0000119  #definition source
+http://purl.obolibrary.org/obo/IAO_0000117  # definition editor
+http://purl.obolibrary.org/obo/IAO_0000118  # alternative term
+http://purl.obolibrary.org/obo/IAO_0000111  # editor preferred term
+http://purl.obolibrary.org/obo/IAO_0000112  # example
+http://purl.obolibrary.org/obo/IAO_0000116  # editor note
+http://purl.obolibrary.org/obo/IAO_0000114  # has curation status
+http://purl.obolibrary.org/obo/IAO_0000589  # OBO Foundry unique label
+http://purl.obolibrary.org/obo/IAO_0000232  # curator note
+http://purl.obolibrary.org/obo/IAO_xref   # IAO_xRef

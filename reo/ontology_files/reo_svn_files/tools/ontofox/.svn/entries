@@ -1,0 +1,34 @@
+10
+
+dir
+218
+https://reagent-ontology.googlecode.com/svn/trunk/tools/ontofox
+https://reagent-ontology.googlecode.com/svn
+
+
+
+2012-09-06T19:26:26.203470Z
+213
+brushm@ohsu.edu
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+83a0f5c5-7e4d-60c4-4a5a-afdbc4388dcd
+
+ontofox_generated_imports
+dir
+
+ontofox_input_files
+dir
+

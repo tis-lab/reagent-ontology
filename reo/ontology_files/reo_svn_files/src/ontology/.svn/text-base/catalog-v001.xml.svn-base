@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/mod_import.owl" uri="external/mod_import.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/reo/external/RO-dev_import.owl" uri="external/RO-dev_import.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.org/obo/owl/ro_bfo_bridge1_1" uri="imports/ro_bfo_bridge_1.1.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/reo.owl" uri="reo.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/reo/external/UO_import.owl" uri="external/uo_import.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/reo/external/ncbi-taxon_import.owl" uri="external/ncbi-taxon_import.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/reo/external/ero_import.owl" uri="external/ero_import.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/reo/external/iao_main_import.owl" uri="external/iao_main_import.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="imports/ontology-metadata.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/reo/external/RO-dev_import.owl" uri="external/RO-dev_imports.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/reo/external/BFO2-RO_import.owl" uri="external/BFO2-RO_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/reo.owl" uri="reo.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl" uri="imports/iao/externalDerived.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="imports/iao/externalByHand.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="imports/iao/ontology-metadata.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/reo.owl" uri="reo-sandbox.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/CLO_import.owl" uri="external/CLO_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/PRO_import.owl" uri="external/pro_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl" uri="imports/iao/iao-main.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.org/obo/owl/ro_proposed" uri="external/ROproposed_imports.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/caro_import.owl" uri="external/caro_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/caro2_import.owl" uri="external/caro_2_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/SO_import.owl" uri="external/so_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/PATO_import.owl" uri="external/pato_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/OGMS_import.owl" uri="external/ogms_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/MPATH_import.owl" uri="external/mpath_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/GOBP_import.owl" uri="external/gobp_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/DOID_import.owl" uri="external/doid_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/ChEBI_import.owl" uri="external/chebi_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/CL_import.owl" uri="external/cl_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/UBERON_import.owl." uri="external/UBERON_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/CLO_import.owl." uri="external/CLO_import.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/dev/reo/external.owl" uri="external/external.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.com/obo/reo/dev/external-byhand.owl" uri="external/external-byhand.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl" uri="imports/iao/obsolete.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/reo/external/obi_import.owl" uri="external/obi_import.owl"/>
+    <group id="Folder Repository, directory=external/, recursive=true, Auto-Update=true, version=1" prefer="public" xml:base="external/"/>
+    <uri id="User Edited Redirect" name="http://purl.org/obo/owl/ro_bfo_bridge/1.1" uri="imports/ro_bfo_bridge11.owl"/>
+    <uri id="User Edited Redirect" name="http://www.obofoundry.org/ro/ro.owl" uri="imports/ro.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/iao/dev/iao.owl" uri="imports/iao/IAO.owl"/>
+    <uri id="User Edited Redirect" name="http://purl.obolibrary.org/obo/iao/dev/external.owl" uri="imports/iao/external.owl"/>
+    <uri id="User Edited Redirect" name="http://www.obofoundry.org/ro/ro.owl" uri="imports/ro.owl"/>
+    <uri id="User Edited Redirect" name="http://protege.stanford.edu/plugins/owl/protege" uri="imports/protege.owl"/>
+    <uri id="User Edited Redirect" name="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl" uri="imports/protege-dc.owl"/>
+    <uri id="User Edited Redirect" name="http://www.ifomis.org/bfo/1.1" uri="imports/bfo11.owl"/>
+    <uri id="User Edited Redirect" name="http://www.ifomis.org/bfo/1.0" uri="imports/bfo.owl"/>
+    <group id="Folder Repository, directory=imports/, recursive=true, Auto-Update=true, version=1" prefer="public" xml:base="imports/"/>
+</catalog>

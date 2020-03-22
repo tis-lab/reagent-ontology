@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/obi_import.owl" uri="external/obi_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/ncbi-taxon_import.owl" uri="external/ncbi-taxon_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/iao_main_import.owl" uri="external/iao_main_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/ero_import.owl" uri="external/ero_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/caro_import.owl" uri="external/caro_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/UO_import.owl" uri="external/uo_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/UBERON_import.owl." uri="external/UBERON_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/SO_import.owl" uri="external/so_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/RO-dev_import.owl" uri="external/RO-dev_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/PRO_import.owl" uri="external/pro_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/PATO_import.owl" uri="external/pato_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/OGMS_import.owl" uri="external/ogms_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/MPATH_import.owl" uri="external/mpath_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/GOBP_import.owl" uri="external/gobp_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/DOID_import.owl" uri="external/doid_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/ChEBI_import.owl" uri="external/chebi_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/CL_import.owl" uri="external/cl_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/CLO_import.owl" uri="external/CLO_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/reo/external/bfo2_relations_import.owl" uri="external/bfo2_relations_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/mod_import.owl" uri="external/mod_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/dev/reo/external.owl" uri="external/external.owl"/>
+</catalog>

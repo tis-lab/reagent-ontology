@@ -1,0 +1,54 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/reo/external/CLO_import-ontofox.owl
+
+[Source ontology]
+CLO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CLO_0000000 #
+http://purl.obolibrary.org/obo/CLO_0000002 #
+http://purl.obolibrary.org/obo/CLO_0000003 #
+http://purl.obolibrary.org/obo/CLO_0000019 #
+http://purl.obolibrary.org/obo/CLO_0000032 #
+http://purl.obolibrary.org/obo/CLO_0003684 #
+http://purl.obolibrary.org/obo/CLO_0007667 #
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CLO_0000000 #
+subClassOf http://purl.obolibrary.org/obo/REO_0000389
+http://purl.obolibrary.org/obo/CLO_0000002 #
+subClassOf http://purl.obolibrary.org/obo/CLO_0000000
+http://purl.obolibrary.org/obo/CLO_0000003 #
+subClassOf http://purl.obolibrary.org/obo/CLO_0000000
+http://purl.obolibrary.org/obo/CLO_0000019 #
+subClassOf http://purl.obolibrary.org/obo/REO_0000396
+http://purl.obolibrary.org/obo/CLO_0000032 #
+subClassOf http://purl.obolibrary.org/obo/CLO_0000000
+http://purl.obolibrary.org/obo/CLO_0003684 #
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0007667 #
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000115  #definition
+http://purl.obolibrary.org/obo/IAO_0000119  #definition source
+http://purl.obolibrary.org/obo/IAO_0000117  # definition editor
+http://purl.obolibrary.org/obo/IAO_0000118  # alternative term
+http://purl.obolibrary.org/obo/IAO_0000111  # editor preferred term
+http://purl.obolibrary.org/obo/IAO_0000112  # example
+http://purl.obolibrary.org/obo/IAO_0000116  # editor note
+http://purl.obolibrary.org/obo/IAO_0000114  # has curation status
+http://purl.obolibrary.org/obo/IAO_0000589  # OBO Foundry unique label
+http://purl.obolibrary.org/obo/IAO_0000232  # curator note
+http://purl.obolibrary.org/obo/IAO_xref   # IAO_xRef

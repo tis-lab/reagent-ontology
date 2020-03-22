@@ -1,0 +1,89 @@
+From: https://code.google.com/archive/p/reagent-ontology/wikis/Antibodies.wiki
+
+---------------------------
+
+This page documents design decisions for modeling antibody reagents and related classes in ReO
+Overview of the Implemented Antibody Model
+
+http://reagent-ontology.googlecode.com/svn/trunk/docs/Documentation/11-4-12%20Implemented%20ReO%20Antibody%20Model%20v3.jpg
+Description of Specific Classes and Relations
+1. Antibody Reagent
+
+A. An 'antibody reagent' is an antibody that is applied as a probe in an experimental technique to recognize a specific molecular target of interest, with the goal of detection, isolation, or modulation of this target.
+
+    Equivalent Class Axiom: antibody and ('has role' some 'molecular probe role')
+
+B. Antibody reagents are typically bioengineered through some antibody production process to recognize a specific molecular antigen of interest, or a larger material target containing some unspecified antigen (e.g. antibodies generated against some cell or tissue type, where the precise molecular antigen(s) recognized are unknown). A rare exception are those that are collected from some organism that was not subject to some controlled immunization technique, but rather naturally exposed to some immunogen that resulted in production of an antibody that has experimental value as a reagent. To account for these outliers, 'antibody reagent' is not placed below 'bioengineered protein reagent', and antibodies are modeled as being the specified output of some 'antibody production' or 'specimen collection from organism'.
+
+    Superclass Axiom: is_specified_output_of some ('specimen collection from organism' or 'antibody production')
+
+C. Antibodies have a molecular function to recognize some molecular target, which is exploited in the molecular probe role borne by antibody reagents. A key characteristic of an antibody reagent is that its probe role is necessarily realized in an experimental technique, through the process of binding an epitope on a molecular antigen. This process also realizes the antigen role of the antigen recognized. The restriction that antigen recognition must occur in the context of an experimental technique is modeled by creating an 'experimental antigen role' subclass of the antigen role realized by this recognition. This follows a similar approach in OBI (see OBI:'assay antigen role'), but may not be necessary as a component of core antibody modeling in ReO.
+
+    Superclass Axiom: recognizes some (epitope and (proper_part_of some (antigen and ('has role' some 'experimental antigen role'))))
+
+D. Note that due to the transitivity of the 'recognizes' relation across partonomies, an antibody can be said to recognize an epitope (directly through physical contact), an antigen (through having an epitope as a proper part), or an antigenic material (through having part some antigen which has proper part some epitope). Note also that antigens can themselves qualify as antigenic materials, and thus the reflexive has_part relation is used in saying that an antigenic material has_part some antigen. Epitopes, by contrast, are always a proper part of some larger molecular entity, and this they are modeled as a proper_part of some antigen.
+
+
+
+
+2. Epitopes
+
+Epitopes are the distinct molecular surface features of an antigen capable of being bound by an adaptive immune receptor complex (typically an antibody). Antigenic molecules, normally being "large" biological polymers, usually present several surface features that can act as points of interaction for specific antibodies. Any such distinct molecular feature constitutes an epitope. Therefore, most antigens have the potential to be bound by several distinct antibodies, each of which is specific to a particular epitope.
+
+    Equivalent Class Axiom: 'chemical entity' and ('is bearer of' some 'disposition to be bound by an adaptive immune receptor')
+
+Epitope here is a child of 'chemical entity' and not 'chemical group', because chemical groups as considered in ChEBI are necessarily contiguous, and not all epitopes are contiguous (ie linear epitopes are, but conformational epitopes are not). Epitope has two children that distinguish such contiguous/linear epitopes from those that are not contiguous (ie conformational).
+
+    Superclass Axiom: is_recognized_by some 'adaptive immune receptor complex
+    Supreclass Axiom: proper_part_of some antigen
+
+
+
+
+3. Antigens and Immunogens
+Antigens
+
+Antigens are those chemical/molecular entities that have epitopes as parts. Antigens are defined by a role they play in a chemical interaction in which they are recognized and bound by an adaptive immune receptor. Any chemical or molecular entity recognized by such a receptor is considered an antigen.
+
+    Equivalent Class Axiom: 'chemical entity' and ('has role' some 'antigen role')
+    Superclass Axiom: is_recognized_by some 'adaptive immune receptor complex'
+    Superclass Axiom: has_proper_part some epitope
+
+In biology, these are most commonly proteins or polysaccharide molecules, that are part of some foreign object such as a bacteria or virus or cancer cell. Other biological molecules can be antigens as well, including lipids and nucleic acids, but typically only when conjugated to some protein or carbohydrate. Non-biological materials can also be antigenic, including chemicals such as polychlorinated biphenyls, and compounds such as lead.
+
+Here, we assert all antigens to be chemical entities as defined by ChEBI. More specifically they are either molecular entities (e.g. protein or polysaccharide molecules), or pure chemical substances (e.g. compounds such as lead). Larger, non-homogenous, or complex materials such as viruses, cells, organisms, mixtures, or manufactured materials, may have molecular/chemical parts that are antigens, but themselves would not be classified as antigens. Rather, such larger materials can be an 'antigenic material', if they has as part some chemical/molecular part that is recognized by an adaptive immune receptor (ie has as part some antigen, which in turn has part some epitope).
+
+The 'antigenic material' class was created to account for cases where the precise chemical/molecular antigen recognized by an antibody is not known - but instead some larger entity such as a cell or organelle type is known to be recognized in virtue of its having as part some uncharacterized molecular antigen. This is common in experimental biology, and the modeling here allows for reference to experimental targets of antibodies even when the precise antigen is not known.
+Immunogens
+
+Immunogens are considered to by a subtype of antigens in ReO, as they fulfill the definitional requirement of necessarily being recognized by some adaptive immune receptor. Accordingly, 'immunogen role' is a child of 'antigen role'. The distinction is that recognition of an immunogen triggers an 'adaptive immune response' that leads to the generation of antibodies, while recognition of an antigen triggers an immune response, but not necessarily an adaptive one. Like antigens, immunogens are asserted as a type of chemical entity. And as with the 'antigenic material' counterpart of antigens, we also create an 'immunogenic material' class as a type of material entity that contains a chemical/molecular immunogen as part, and represents the actual material introduced into an organism that stimulates an adaptive immune response. As the has_part relation between an immunogen and immunogenic material is reflexive, molecular immunogens are also considered to be immunogenic materials.
+
+
+
+
+4. Antigen Role
+
+An antigen role is a role inhering in a chemical entity that is recognized by an adaptive immune receptor (typically an antibody). This role has three subtypes. (1) Experimental antigen roles are those realized in the context of some experimental technique where this interaction is used to generate data or effect some response in the system being studied. (2) Endogenous antigen roles are those realized in the context of some organism or biological system where a functional immune response results. (3) Immunogen roles are those that are realized in the context of an organism or biological system where an adaptive immune response results.
+
+
+
+
+5. Experimental Antibody Targets
+
+To account for experimental settings where researchers know only that an antibody reagent recognizes a larger/complex material, we have created an 'experimental antibody target' class that is defined as having part some antigen. This class allows us to talk about the material entity which an antibody is used to target in an experiment, even in cases where the actual antigen is not known (e.g. antibodies known to recognize a certain cell or organelle type, for example, but where the actual molecular antigen associated with these targets is not known). To qualify as an experimental antibody target, a material needs to have been demonstrated (or hypothesized based on structural homology) to be recognized by some antibody reagent. Note that, because the part_of relation is reflexive, it is acceptable for molecular or chemical antigens themselves to be experimental antibody targets (ie they are still part_of some experimental antigen, in that they are part_of themselves).
+
+
+
+
+6. Antigenic and Immunogenic Materials
+
+Larger materials that exist above the chemical/molecular granularity are not considered antigens in ReO, but can be an 'antigenic material' - if they has as part some chemical/molecular component that is recognized by an adaptive immune receptor (ie has as part some antigen, which in turn has part some epitope). This 'antigenic material' class was created to account for cases where the precise chemical/molecular antigen recognized by an antibody is not known - but instead some larger entity such as a cell or organelle type is known to be recognized in virtue of its having as part some uncharacterized molecular antigen. This is common in experimental biology, and the modeling here allows for reference to experimental targets of antibodies even when the precise antigen is not known.
+
+Analogous to the 'antigenic material' counterpart of antigens, we also create an 'immunogenic material' class as a type of material entity that contains a chemical/molecular immunogen as part, and represents the actual material introduced into an organism that stimulates an adaptive immune response. So immunogens are different from immunogenic materials in that they are fundamentally chemical or molecular entities, while immunogenic materials can include larger, more complex materials such as cells or organisms that contain as part some molecular immunogen. As the has_part relation between an immunogen and immunogenic material is reflexive, molecular immunogens are also considered to be immunogenic materials.
+
+
+
+
+7. 'Recognizes' Relation
+
+Note that we make the 'recognizes' relation transitive across the part_of relation (as indicated in the property chain below), such that if an antibody recognizes some epitope then it also recognizes the antigen of which it is a part, and any larger material entity of which the antigen may be a part (e.g. in cases where the experimental target is some cell or tissue). Similarly, if an antigenic material has_part some antigen that is recognized by an antibody, then that antibody can be said to recognize the antigenic material. So while antibodies DIRECTLY recognize an epitope (ie physically binds only the epitope part of a target), the transitivity of the 'recognizes' and 'is_recognized_by' relations over partonomies allow it to be inferred that an antibody 'recognizes' an antigen or 'antigenic material' of which an epitope is a part.

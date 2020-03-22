@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/reo/external/OGMS_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/reo/external/OGMS_import.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:CARO="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/reo/external/OGMS_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CARO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000061">
+        <rdfs:label>pathological bodily process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <CARO:IAO_0000232>creation date: 2009-06-23T11:54:29Z</CARO:IAO_0000232>
+        <CARO:IAO_0000115 xml:lang="en">A bodily process that is clinically abnormal.</CARO:IAO_0000115>
+        <CARO:IAO_0000117>Albert Goldfain</CARO:IAO_0000117>
+        <CARO:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</CARO:IAO_0000119>
+        <CARO:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000063">
+        <rdfs:label>disease course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+        <CARO:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</CARO:IAO_0000119>
+        <CARO:IAO_0000117>Albert Goldfain</CARO:IAO_0000117>
+        <CARO:IAO_0000232>creation date: 2009-06-23T11:55:44Z</CARO:IAO_0000232>
+        <CARO:IAO_0000115 xml:lang="en">The totality of all processes through which a given disease instance is realized.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000077">
+        <rdfs:label>pathological formation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <CARO:IAO_0000117>Albert Goldfain</CARO:IAO_0000117>
+        <CARO:IAO_0000115 xml:lang="en">TODO: Define, relate to disorder, and place in the OGMS hierarchy.</CARO:IAO_0000115>
+        <CARO:IAO_0000119>http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf</CARO:IAO_0000119>
+        <CARO:IAO_0000232>creation date: 2009-07-13T02:14:59Z</CARO:IAO_0000232>
+        <CARO:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000078">
+        <rdfs:label>pathological anatomical structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <CARO:IAO_0000232>creation date: 2009-07-13T02:14:05Z</CARO:IAO_0000232>
+        <CARO:IAO_0000117>Albert Goldfain</CARO:IAO_0000117>
+        <CARO:IAO_0000115 xml:lang="en">An anatomical structure (FMA) is pathological whenever (1) it has come into being as a result of changes in some pre-existing canonical anatomical structure, (2) through processes other than the expression of the normal complement of genes of an organism of the given type, and (3) is predisposed to have health-related consequences for the organism in question manifested by symptoms and signs.</CARO:IAO_0000115>
+        <CARO:IAO_0000119>http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf</CARO:IAO_0000119>
+        <CARO:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000079">
+        <rdfs:label>portion of pathological body substance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000004"/>
+        <CARO:IAO_0000119>http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf</CARO:IAO_0000119>
+        <CARO:IAO_0000117>Albert Goldfain</CARO:IAO_0000117>
+        <CARO:IAO_0000232>creation date: 2009-07-13T02:15:17Z</CARO:IAO_0000232>
+        <CARO:IAO_0000115 xml:lang="en">TODO: Define, relate to disorder, and place in the OGMS hierarchy.</CARO:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000080">
+        <rdfs:label>pathological transformation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+        <CARO:IAO_0000232>creation date: 2009-07-13T02:17:07Z</CARO:IAO_0000232>
+        <CARO:IAO_0000117>Albert Goldfain</CARO:IAO_0000117>
+        <CARO:IAO_0000119>http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf</CARO:IAO_0000119>
+        <CARO:IAO_0000115 xml:lang="en">A pathological bodily process in which a canonical anatomical structure becomes a pathological anatomical structure.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000081">
+        <rdfs:label>pathological derivation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+        <CARO:IAO_0000232>creation date: 2009-07-13T02:17:24Z</CARO:IAO_0000232>
+        <CARO:IAO_0000119>http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf</CARO:IAO_0000119>
+        <CARO:IAO_0000117>Albert Goldfain</CARO:IAO_0000117>
+        <CARO:IAO_0000115 xml:lang="en">A pathological bodily process in which matter is reorganized in such a way as to give rise to new pathological formations which take the place of entities existing earlier.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000082">
+        <rdfs:label>pathological invasion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+        <CARO:IAO_0000117>Albert Goldfain</CARO:IAO_0000117>
+        <CARO:IAO_0000232>creation date: 2009-07-13T02:17:47Z</CARO:IAO_0000232>
+        <CARO:IAO_0000119>http://ontology.buffalo.edu/bio/ISMB/ISMB_Bio-ontologies.pdf</CARO:IAO_0000119>
+        <CARO:IAO_0000115 xml:lang="en">TODO: Define.</CARO:IAO_0000115>
+        <CARO:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+

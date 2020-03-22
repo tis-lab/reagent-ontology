@@ -1,0 +1,507 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2011/11/reo-display.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/11/reo-display.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:CL="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2011/11/reo-display.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/reo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0003684 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0003684">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000429"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0007667 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0007667">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000429"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100060 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000431"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000006 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000431"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000095 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000430"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000101 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000432"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000104 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000428"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000105 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000106 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000108 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000110 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000428"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000112 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000429"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000116 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000428"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000119 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000120 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000149 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000433"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000151 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000428"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000156 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000156">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000162 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000163 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000163">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000427"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000168 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000428"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000204 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000204">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000431"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000260 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000281"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000268 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000281"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000272 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000281"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000280 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000430"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000281">
+        <rdfs:label>Defined molecular label classes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000280"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000424"/>
+        <rdfs:comment>The top level primary/asserted axis for molecular label classification distinguishes &#39;reporters&#39; from &#39;trackers&#39;, based on the &#39;detectablility&#39; of the molecular entity bearing the molecular label role.
+
+At the next level in the hierarchy, a distinciton is made between &#39;covalent&#39; and &#39;targeted&#39; labels, based on the mechanism of binding that the label uses in associating with its intended target.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000295 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000295">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000430"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000297 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000297">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000432"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000301 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000301">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000431"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000324 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000324">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000430"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000373 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000433"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000397 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000397">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000428"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000398 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000398">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000428"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000403 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000403">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000426"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000404 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/REO_0000404">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000426"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000423">
+        <rdfs:label>organizational classes</rdfs:label>
+        <obo:REO_0000192>In some cases, it is not possible to get things to show up how you want. For ex, cultured multicellular organism cell should be a primary class in the multicellular organism cell hierarchy, but because it is subsumed by one of the defined classes in this hierarchy (exp mod multicellular organism cell), it does not appear as a primary class next to its siblings cell ex vivo and in vivo.
+
+One possible solution here is to actually create &#39;Primary ____ classes&#39; as a sibling to &#39;Defined ____ classes&#39; and assert cell ex vivo, cell in vivo, and cultured multicellular org cell here.</obo:REO_0000192>
+        <obo:IAO_0000115>this container class holds all organizational classes used in reo-display.owl to structure the presentation of hierarchies. but these organizational classes  themselves have no instances in reality.
+
+Convention for Use:
+All such classes will be asserted in two places in reo-display.owl.  Once in the main hierarhcy according to the type of class they organize, and once in this &#39;organizational class&#39; hierarchy such that all such classes can be viewed together.</obo:IAO_0000115>
+        <rdfs:comment>Rationale: 
+
+For each parent class in ReO, there is a &#39;primary&#39; set of subclasses (based on a single primary principle of classification) that represents a complete and disjoint partitioning of the class (ie all subclasses/instances will fit in only one of the subclasses).  
+
+All other subclasses are &#39;secondary&#39;, and represent &#39;defined&#39; classes based on some other principle of classification. 
+
+To facilitate a clear distinction between  primary and secondary subclassing in several ReO hierarchies where many equivalent classes are defined (and can obscure for viewers the primary principle of classification),  a reo-display.owl layer has been created.  This layer holds superclass axioms that result in all &#39;secondary&#39; subclasses to be grouped together under a new organizational class called &#39;defined (parent class label) classes&#39;.  
+
+Presentation of ReO hierarchies that contain numerous equivalent classes using this approach clarifies modeling principles.  Additionally, it highlights for users primary set of classes where new classes should be asserted, and what additional defined classes exist such that axioms can be added to new classes to qualify them for inferred classification in these defined classes.
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000424 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000424">
+        <rdfs:label>defined ____ classes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000423"/>
+        <rdfs:comment>Definition:
+this container class holds all organizational class in reo-display that are used to group defined classes in a given hierarchy, so as to make the primary/asserted axis of classification more transparent.
+    
+Example : &#39;cell culture&#39; hierarchy
+- created a &#39;cell culture defined classes&#39; child of &#39;cell culture&#39;, and add &#39;cell culture defined classes&#39; superclass axioms to &#39;passaged cell culture&#39; and &#39;selected cell culture&#39;.  Then, in the inferred hierarchy, all defined classes will be grouped together here. (note that i will have asserted multiple inheritance here  - but in the inferred hierarchy, the defined classes will only show up in one place)
+    
+Also used so far to order display of &#39;multicellular organism cell culture&#39; and &#39;immortal cell line&#39; hierarchies.
+    
+** these classes and axioms will live in another layer (reo-display.owl)
+
+Uses:
+&#39;defined cell culture classes&#39;
+&#39;defined multicellular organism cell culture classes&#39;
+&#39;defined immortal cell line classes&#39;
+&#39;defined molecular reagent classes&#39;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000425 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000425">
+        <rdfs:label>primitive ____ classes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000423"/>
+        <rdfs:comment>Definition:
+this container class holds all organizational class that are used in reo-display to group primitive classes in a given hierarchy, so as to make the distinction between fundamental primitive classes and defined classes more transparent.
+
+Example : &#39;immortal cell line&#39; hierarchy
+create a &#39;immortal cell line primitive classes&#39; child of &#39;immortal cell line&#39;, and add  a &#39;immortal cell line primitive classes&#39; superclass axioms to all primitive/named cell line classes (HeLa, PC12, and MEF-1).  Then, in the inferred hierarchy, all such primitive classes will be grouped together here, and also appear under the appropriate defined classes
+
+Serves two goals for immortal cell lines : 
+sets these apart so that it is clear where to assert classes for new cell lines.
+offers a place to view ALL such primitive/asserted cell lines (because will be hard to get a sense for what is in the ontology when they are all scattered through the various defined classes - for ex, in the inferred hierarchy, the PC12 line often some only appears several levels down from &#39;immortal cell line&#39;.
+
+** these classes and axioms will live in another layer (reo-display.owl)
+
+Usage: 
+&#39;primitive immortal cell line classes&#39;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000426 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000426">
+        <rdfs:label>Defined cell culture classes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000424"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000427">
+        <rdfs:label>Defined multicellular organism culture classes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000396"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000424"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000428 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000428">
+        <rdfs:label>Defined immortal cell line classes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000424"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000429 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000429">
+        <rdfs:label>Primitive immortal cell line classes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000425"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000430 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000430">
+        <rdfs:label>Defined molecular reagent role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000242"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000423"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000431">
+        <rdfs:label>non-molecular reagent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000432 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000432">
+        <rdfs:label>Defined cell classes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000100"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000424"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/REO_0000433 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/REO_0000433">
+        <rdfs:label>Defined multicellular organism cell classes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000371"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000424"/>
+        <obo:REO_0000192>In some cases, it is not possible to get things to show up how you want. For ex, cultured multicellular organism cell should be a primary class in the multicellular organism cell hierarchy, but because it is subsumed by one of the defined classes in this hierarchy (exp mod multicellular organism cell), it does not appear as a primary class next to its siblings cell ex vivo and in vivo.
+
+One possible solution here is to actually create &#39;Primary ____ classes&#39; as a sibling to &#39;Defined ____ classes&#39; and assert cell ex vivo, cell in vivo, and cultured multicellular org cell here.
+</obo:REO_0000192>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000578 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000578">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/REO_0000432"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,57 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/reo/external/OGMS_import-ontofox.owl
+
+[Source ontology]
+OGMS
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OGMS_0000061 #
+http://purl.obolibrary.org/obo/OGMS_0000063 #
+http://purl.obolibrary.org/obo/OGMS_0000077 #
+http://purl.obolibrary.org/obo/OGMS_0000078 #
+http://purl.obolibrary.org/obo/OGMS_0000079 #
+http://purl.obolibrary.org/obo/OGMS_0000080 #
+http://purl.obolibrary.org/obo/OGMS_0000081 #
+http://purl.obolibrary.org/obo/OGMS_0000082 #
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OGMS_0000061 #
+subClassOf http://purl.obolibrary.org/obo/GO_0008150
+http://purl.obolibrary.org/obo/OGMS_0000063 #
+subClassOf http://www.ifomis.org/bfo/1.1/span#ProcessualEntity
+http://purl.obolibrary.org/obo/OGMS_0000077 #
+subClassOf http://purl.obolibrary.org/obo/CARO_0000003
+http://purl.obolibrary.org/obo/OGMS_0000078 #
+subClassOf http://purl.obolibrary.org/obo/CARO_0000003
+http://purl.obolibrary.org/obo/OGMS_0000079 #
+subClassOf http://purl.obolibrary.org/obo/CARO_0000004
+http://purl.obolibrary.org/obo/OGMS_0000080 #
+subClassOf http://purl.obolibrary.org/obo/OGMS_0000061
+http://purl.obolibrary.org/obo/OGMS_0000081 #
+subClassOf http://purl.obolibrary.org/obo/OGMS_0000061
+http://purl.obolibrary.org/obo/OGMS_0000082 #
+subClassOf http://purl.obolibrary.org/obo/OGMS_0000061
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000115  #definition
+http://purl.obolibrary.org/obo/IAO_0000119  #definition source
+http://purl.obolibrary.org/obo/IAO_0000117  # definition editor
+http://purl.obolibrary.org/obo/IAO_0000118  # alternative term
+http://purl.obolibrary.org/obo/IAO_0000111  # editor preferred term
+http://purl.obolibrary.org/obo/IAO_0000112  # example
+http://purl.obolibrary.org/obo/IAO_0000116  # editor note
+http://purl.obolibrary.org/obo/IAO_0000114  # has curation status
+http://purl.obolibrary.org/obo/IAO_0000589  # OBO Foundry unique label
+http://purl.obolibrary.org/obo/IAO_0000232  # curator note
+http://purl.obolibrary.org/obo/IAO_xref   # IAO_xRef

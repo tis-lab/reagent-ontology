@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl" uri="external/protege-dc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://protege.stanford.edu/plugins/owl/protege#" uri="external/protege.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://purl.obofoundry.org/obo/" uri="protege/IAO-P3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://purl.obofoundry.org/obo/iao/iao-owl-full.owl" uri="protege/iao-owl-full.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="duplicate:http://purl.obolibrary.org/obo/" uri="external.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="duplicate:http://purl.obolibrary.org/obo/" uri="externalByHand.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="duplicate:http://purl.obolibrary.org/obo/" uri="obsolete.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://purl.obolibrary.org/obo/iao/dev/examples.owl" uri="iao-examples.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl" uri="externalDerived.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://purl.obolibrary.org/obo/iao/dev/iao-dev.owl" uri="iao-dev.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl" uri="iao-main.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://purl.obolibrary.org/obo/iao/dev/iao.owl" uri="IAO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="ontology-metadata.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://purl.obolibrary.org/obo/iao/dev/owl2bits.owl" uri="iao-owl2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://purl.org/obo/owl/ro_bfo1-1_bridge" uri="external/ro_bfo1-1_bridge.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://purl.org/obo/owl/ro_bfo_bridge/1.1" uri="external/ro_bfo_bridge11.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://www.ifomis.org/bfo/1.1" uri="external/bfo11.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1335300800000" name="http://www.obofoundry.org/ro/ro.owl" uri="external/ro.owl"/>
+    </group>
+</catalog>
