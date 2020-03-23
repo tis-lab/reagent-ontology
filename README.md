@@ -10,7 +10,7 @@ The best file to explore if you want to poke around the ontology itself is the p
 ------------------------
 
 ### Directory Structure
-The directory structure of files in this ReO archive repository is described below. 
+The directory structure and content of this ReO archive repository is described below: 
 
 - `reo/`: ontology files and documents for the full reo ontology. 
     - `reo/ontology_files/`: the owl files for the ontology itself
