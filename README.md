@@ -1,7 +1,7 @@
 ## The Reagent Ontology (Archive)
 
 ### Overview
-This repository was set up to hold files related to the Reagent Ontology (ReO), which has been inactive since its SVN repository hosted at Google Code ([link](https://code.google.com/archive/p/reagent-ontology/)) was shut down many years ago. While the ontology as a whole has some pervasive issues (e.g. baroque axiomatization, scope creep, antiquated modeling, etc.), and hasn’t been developed at all in the past 8 years, there may be content that can inform or be ceded to other actively developed ontologiesm, such as the Ontology of Biomedical Investigations (OBI)([link](http://obi-ontology.org/)). 
+This repository was set up to hold files related to the Reagent Ontology (ReO), which has been inactive since its SVN repository hosted at Google Code ([link](https://code.google.com/archive/p/reagent-ontology/)) was shut down many years ago. While the ontology as a whole has some pervasive issues (e.g. baroque axiomatization, scope creep, antiquated modeling, etc.), and hasn’t been developed at all in the past 8 years, there may be content that can inform or be ceded to other actively developed ontologiesm, such as the Ontology of Biomedical Investigations ([link](http://obi-ontology.org/)). 
 
 An overview of the content, organization, and ontological principles of the Reagent Ontology can be found in the 2011 conference abstract [here](http://ceur-ws.org/Vol-833/paper32.pdf). Information on a 'slim' version focused on antibody reagent representation, which is also archived in this repository, can be found [here](https://code.google.com/archive/p/reagent-ontology/wikis/Antibodies.wiki).
 
