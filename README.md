@@ -5,7 +5,7 @@ This repository was set up to hold files related to the Reagent Ontology (ReO), 
 
 An overview of the content, organization, and ontological principles of the Reagent Ontology can be found in the 2011 conference abstract [here](http://ceur-ws.org/Vol-833/paper32.pdf). Information on a 'slim' version focused on antibody reagent representation, which is also archived in this repository, can be found [here](https://code.google.com/archive/p/reagent-ontology/wikis/Antibodies.wiki).
 
-The best file to explore if you want to poke around the ontology itself is the *pre-merged and reasoned* version [here](https://github.com/tis-lab/reagent-ontology/blob/master/reo/ontology_files/reo_pre-merged_or_reasoned_files/reo_reasoned_9-6-12.owl). The central hierarchy rooted at the 'reagent' class is built only upon running a reasoned over the ontology to collect all classes with a reagent role in one place - and the baroque axiomatization of classes in the ontology make reasoning in Protégé prohibitively slow (at least with the most common Protege reasoner plugins).
+The best file to explore if you want to poke around the ontology itself is the **pre-merged and reasoned** version [here](https://github.com/tis-lab/reagent-ontology/blob/master/reo/ontology_files/reo_pre-merged_or_reasoned_files/reo_reasoned_9-6-12.owl). The central hierarchy rooted at the 'reagent' class is built only upon running a reasoned over the ontology to collect all classes with a reagent role in one place - and the baroque axiomatization of classes in the ontology make reasoning in Protégé prohibitively slow (at least with the most common Protege reasoner plugins).
 
 
 
