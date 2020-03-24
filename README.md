@@ -7,7 +7,7 @@ An overview of the content, organization, and ontological principles of the Reag
 
 The best file to explore if you want to poke around the ontology itself is the **pre-merged and reasoned** version [here](https://github.com/tis-lab/reagent-ontology/blob/master/reo/ontology_files/reo_pre-merged_or_reasoned_files/reo_reasoned_9-6-12.owl). The central hierarchy rooted at the 'reagent' class is built only upon running a reasoned over the ontology to collect all classes with a reagent role in one place - and the baroque axiomatization of classes in the ontology make reasoning in Protégé prohibitively slow (at least with the most common Protege reasoner plugins).
 
-
+The best file to explore if you want to poke around the ontology itself is the *pre-reasoned* version [here](https://github.com/tis-lab/reagent-ontology/blob/master/reo/ontology_files/reo_pre-merged_or_reasoned_files/reo_reasoned_9-6-12.owl). The central hierarchy rooted at the 'reagent' class is what you will want to explore - but it is built only upon running a reasoned over the ontology to collect all classes with a reagent role in one place. This 'pre-reasoned' version is useful because ReO's baroque axiomatization of classes in the ontology make reasoning in Protégé prohibitively slow (at least with the most common Protege reasoner plugins).
 
 ------------------------
 
